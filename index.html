@@ -908,12 +908,12 @@ ${TIERS.map(t=>`<tr><td><span class="chip ${t.cor}">${t.id} · ${t.nome}</span><
 
 /* ===================== 04 ===================== */
 M('cenarios','04','Cenários de cliente','segmento saude varejo banco educacao fii administradora sindico industria',()=>`
-${head('04','Cenários','Dossiê por segmento','Onze perfis com o gatilho típico, o relógio do cliente, as perguntas de diagnóstico calibradas e as telas que fazem sentido na demonstração. Escolha o segmento antes da reunião e leve isso na cabeça, não na tela.')}
+${head('04','Cenários','Dossiê por segmento','Dez perfis com o gatilho típico, o relógio do cliente, as perguntas de diagnóstico calibradas e as telas que fazem sentido na demonstração. Escolha o segmento antes da reunião e leve isso na cabeça, não na tela.')}
 <div class="sec">
   <div class="segbar" id="segbar">${SEGMENTOS.map((s,i)=>`<button type="button" class="segbtn" data-seg="${s.id}" aria-pressed="${i===0}">${s.nome}</button>`).join('')}</div>
   <div id="dossier"></div>
 </div>
-${sec('Onde está o dinheiro','Vale para os onze segmentos e para qualquer conta que não esteja na lista.',
+${sec('Onde está o dinheiro','Vale para os dez segmentos e para qualquer conta que não esteja na lista.',
 `${prose(['Comece pelo <strong>custo operacional recorrente</strong>. Toda operação multiponto gasta OPEX só para produzir informação: horas de gente juntando fatura, conferindo consumo, montando planilha, refazendo relatório que veio errado, cobrando documento de fornecedor. Esse custo não aparece na conta de energia. Aparece na folha e no calendário, e por isso quase ninguém soma.','A plataforma entra por uma troca simples: <strong>no lugar do trabalho manual, não em cima dele</strong>. Não é mais uma ferramenta somada à rotina, é a rotina saindo da planilha. A partir daí a conta fecha por quatro caminhos, e o melhor argumento é quase sempre o que o seu interlocutor é cobrado para entregar.'])}
 <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(330px,1fr));margin-top:16px">
 ${[['OPEX deduzido em tempo','As horas que hoje somem na coleta e na conferência voltam para análise, negociação e o que de fato gera resultado. É o argumento de quem toca a operação.'],
