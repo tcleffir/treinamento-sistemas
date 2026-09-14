@@ -1,0 +1,1252 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Treinamento comercial da LUXSolutions: qualificação, cenários de cliente, demonstração, objeções e certificação.">
+<meta name="robots" content="noindex">
+<style>
+:root{color-scheme:light dark}
+html,body{margin:0;padding:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<title>Playbook LUXSolutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  /* Paleta Lux 2026 */
+  --navy:#0B2A3D; --navy-2:#1F4E6B; --blue:#2F6F8F; --blue-2:#4F7F99;
+  --forest:#0F3834; --green:#4E7D5B; --lime:#8BC34A;
+  --mist:#E6ECEF; --cream:#FBFFEF; --grey:#6B7C88;
+
+  --ground:#E6ECEF; --surface:#FFFFFF; --surface-2:#FBFFEF; --surface-3:#DBE4E9;
+  --ink:#0B2A3D; --ink-2:#3E5C6E; --ink-3:#6B7C88;
+  --line:#C9D6DD; --line-strong:#A9BCC5;
+  --accent:#1F4E6B; --accent-soft:#E1EBF1;
+  --lime-ink:#5A8B26; --lime-soft:#EDF6DC;
+  --tA:#5A8B26; --tA-soft:#EDF6DC;
+  --tB:#4E7D5B; --tB-soft:#E5EFE8;
+  --tC:#2F6F8F; --tC-soft:#E1EBF1;
+  --tD:#6B7C88; --tD-soft:#E4EAEE;
+  --btn-bg:#0B2A3D; --btn-fg:#FFFFFF;
+  --deep:#0B2A3D; --deep-ink:#E6ECEF;
+  --radius:8px;
+  --f:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#071A25; --surface:#0B2A3D; --surface-2:#10364B; --surface-3:#1B4560;
+    --ink:#E6ECEF; --ink-2:#A9BDC7; --ink-3:#7D94A1;
+    --line:#194058; --line-strong:#2A5C7A;
+    --accent:#7FB2CC; --accent-soft:#10364B;
+    --lime-ink:#A3D465; --lime-soft:#17301A;
+    --tA:#A3D465; --tA-soft:#1A3320;
+    --tB:#7BB38B; --tB-soft:#16301F;
+    --tC:#7FB2CC; --tC-soft:#0F3247;
+    --tD:#93A7B2; --tD-soft:#172933;
+    --btn-bg:#8BC34A; --btn-fg:#07202E;
+    --deep:#04121A; --deep-ink:#D6E2E8;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#071A25; --surface:#0B2A3D; --surface-2:#10364B; --surface-3:#1B4560;
+  --ink:#E6ECEF; --ink-2:#A9BDC7; --ink-3:#7D94A1;
+  --line:#194058; --line-strong:#2A5C7A;
+  --accent:#7FB2CC; --accent-soft:#10364B;
+  --lime-ink:#A3D465; --lime-soft:#17301A;
+  --tA:#A3D465; --tA-soft:#1A3320;
+  --tB:#7BB38B; --tB-soft:#16301F;
+  --tC:#7FB2CC; --tC-soft:#0F3247;
+  --tD:#93A7B2; --tD-soft:#172933;
+  --btn-bg:#8BC34A; --btn-fg:#07202E;
+  --deep:#04121A; --deep-ink:#D6E2E8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---- shell ---- */
+.app{display:grid;grid-template-columns:264px minmax(0,1fr);min-height:100vh}
+.sidebar{background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;position:sticky;top:0;height:100vh;overflow-y:auto}
+.brand{padding:20px 20px 16px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:11px}
+.brandmark{width:30px;height:30px;flex:0 0 auto;background:var(--ink);-webkit-mask-image:url(data:image/png;base64,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);mask-image:url(data:image/png;base64,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);-webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center}
+.brand b{font-size:14px;font-weight:800;letter-spacing:.01em;line-height:1.15;display:block}
+.brand span{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
+.navsearch{padding:14px 16px 8px}
+.navsearch input{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2);color:var(--ink);font:inherit;font-size:13px}
+.nav{padding:4px 12px 16px;display:flex;flex-direction:column;gap:1px;flex:1}
+.navbtn{display:flex;align-items:baseline;gap:10px;width:100%;text-align:left;background:none;border:0;padding:8px 10px;border-radius:6px;color:var(--ink-2);font-size:13.5px;font-weight:500;line-height:1.3}
+.navbtn:hover{background:var(--surface-2);color:var(--ink)}
+.navbtn[aria-current="true"]{background:var(--accent-soft);color:var(--ink);font-weight:700;box-shadow:inset 2px 0 0 var(--lime)}
+.navbtn .n{font-size:10.5px;font-weight:700;color:var(--ink-3);min-width:18px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.navbtn[aria-current="true"] .n{color:var(--lime-ink)}
+.navbtn.done .n::after{content:"✓";margin-left:2px;color:var(--lime-ink)}
+.navbtn.locked{opacity:.45}
+.sidefoot{padding:14px 16px 18px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.progwrap{display:flex;align-items:center;gap:10px}
+.progbar{flex:1;height:5px;border-radius:3px;background:var(--surface-3);overflow:hidden}
+.progbar i{display:block;height:100%;background:var(--lime);border-radius:3px;transition:width .3s}
+.progtxt{font-size:10.5px;font-weight:700;color:var(--ink-3);white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.ghost{background:none;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--ink-2)}
+.ghost:hover{border-color:var(--line-strong);color:var(--ink)}
+.main{min-width:0;padding:0 0 90px}
+.wrap{max-width:900px;margin:0 auto;padding-inline:26px;padding-block:36px 0}
+
+/* ---- type ---- */
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lime-ink);margin-bottom:10px}
+.h-mod{font-size:clamp(25px,3.3vw,33px);line-height:1.14;font-weight:800;letter-spacing:-.02em;margin-bottom:11px}
+.lede{font-size:16.5px;line-height:1.62;color:var(--ink-2);font-weight:400}
+.sec{margin-top:40px}
+.sec > h2{font-size:18px;font-weight:700;margin-bottom:4px}
+.sec > .sub{color:var(--ink-3);font-size:13.5px;margin-bottom:16px}
+.prose{font-size:15px;line-height:1.68;color:var(--ink-2);display:flex;flex-direction:column;gap:12px}
+.prose strong{color:var(--ink);font-weight:700}
+hr.rule{border:0;border-top:1px solid var(--line);margin:40px 0 0}
+
+/* ---- primitives ---- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:17px 19px}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(245px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}
+.kv{display:flex;flex-direction:column;gap:3px}
+.kv .k{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-3)}
+.kv .v{font-size:13.5px;color:var(--ink-2);line-height:1.5}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:4px 9px;border-radius:4px;background:var(--surface-3);color:var(--ink-2);white-space:nowrap}
+.chip.a{background:var(--tA-soft);color:var(--tA)}
+.chip.b{background:var(--tB-soft);color:var(--tB)}
+.chip.c{background:var(--tC-soft);color:var(--tC)}
+.chip.d{background:var(--tD-soft);color:var(--tD)}
+.chip.lime{background:var(--lime-soft);color:var(--lime-ink)}
+.note{border-left:3px solid var(--lime);background:var(--surface-2);padding:13px 16px;border-radius:0 var(--radius) var(--radius) 0;font-size:14px;color:var(--ink-2);line-height:1.55}
+.note b{font-weight:700;color:var(--ink)}
+.note.alert{background:var(--deep);color:var(--deep-ink);border-left-color:var(--lime)}
+.note.alert b{color:#FFFFFF}
+:root[data-theme="dark"] .note.alert b,:root:not([data-theme="light"]) .note.alert b{color:var(--lime)}
+.pend{border:1px dashed var(--line-strong);border-radius:var(--radius);padding:13px 16px;font-size:13.5px;color:var(--ink-2);line-height:1.55}
+.pend b{color:var(--ink-3);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;display:block;margin-bottom:5px}
+ul.tick{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+ul.tick li{display:flex;gap:11px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
+ul.tick li::before{content:"";flex:0 0 6px;height:6px;margin-top:8px;border-radius:1px;background:var(--lime);transform:rotate(45deg)}
+ul.tick li > span{flex:1 1 auto;min-width:0}
+ul.tick.no li::before{background:var(--ink-3);border-radius:50%;transform:none}
+ul.tick li b{color:var(--ink)}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:540px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.5}
+th{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);font-weight:700;background:var(--surface-2)}
+tr:last-child td{border-bottom:0}
+td b{font-weight:700;color:var(--ink)}
+td.faixa,th.faixa{white-space:nowrap;text-align:left;hyphens:manual;-webkit-hyphens:manual;width:1%;padding-right:20px}
+.btn{background:var(--btn-bg);color:var(--btn-fg);border:0;border-radius:var(--radius);padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.02em}
+.btn:hover{filter:brightness(1.12)}
+.btn.sec2{background:transparent;color:var(--ink);border:1px solid var(--line-strong)}
+.btn.sec2:hover{filter:none;border-color:var(--ink-3);background:var(--surface-2)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+
+/* ---- scorer ---- */
+.scorer{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:18px;align-items:start}
+.dims{display:flex;flex-direction:column;gap:9px}
+.dim{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.dim h4{font-size:14px;font-weight:700;margin-bottom:3px}
+.dim .hint{font-size:11.5px;color:var(--ink-3);margin-bottom:10px}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(134px,1fr));gap:6px}
+.opt{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);background:var(--surface-2);border-radius:6px;padding:9px 10px;font-size:12.5px;line-height:1.4;color:var(--ink-2);text-align:left}
+.opt:hover{border-color:var(--line-strong)}
+.opt[aria-pressed="true"]{border-color:var(--lime);background:var(--lime-soft);color:var(--ink);font-weight:600}
+.opt .pt{font-size:11px;font-weight:700;color:var(--ink-3);flex:0 0 auto;font-variant-numeric:tabular-nums}
+.opt[aria-pressed="true"] .pt{color:var(--lime-ink)}
+.panel{position:sticky;top:24px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:19px;display:flex;flex-direction:column;gap:15px}
+.gauge{display:flex;align-items:baseline;gap:8px}
+.gauge b{font-size:46px;font-weight:800;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.gauge span{font-size:14px;font-weight:600;color:var(--ink-3)}
+.tierbox{border-radius:6px;padding:13px 15px;display:flex;flex-direction:column;gap:6px}
+.tierbox .t{font-weight:800;font-size:15px;display:flex;align-items:center;gap:9px}
+.tierbox .t i{font-style:normal;font-size:21px;font-weight:800}
+.tierbox p{font-size:12.5px;line-height:1.5}
+.meter{height:6px;border-radius:3px;background:var(--surface-3);overflow:hidden;display:flex}
+.meter i{display:block;height:100%;transition:width .25s}
+.flags{display:flex;flex-direction:column;gap:8px;font-size:12.5px;color:var(--ink-2)}
+.flags label{display:flex;gap:9px;align-items:flex-start;cursor:pointer;line-height:1.4}
+.flags input{margin-top:3px;accent-color:var(--navy-2)}
+
+/* ---- pills / dossier ---- */
+.segbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.segbtn{border:1px solid var(--line);background:var(--surface);border-radius:20px;padding:7px 14px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.segbtn:hover{border-color:var(--line-strong);color:var(--ink)}
+.segbtn[aria-pressed="true"]{background:var(--navy);color:#FFFFFF;border-color:var(--navy)}
+:root[data-theme="dark"] .segbtn[aria-pressed="true"],:root:not([data-theme="light"]) .segbtn[aria-pressed="true"]{background:var(--lime);color:#07202E;border-color:var(--lime)}
+.dossier{display:flex;flex-direction:column;gap:12px}
+.dosshead{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:15px}
+.dosshead h3{font-size:21px;font-weight:800}
+
+/* ---- expanders ---- */
+.objcard{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}
+.objlist{display:flex;flex-direction:column;gap:8px}
+.objcard > button{width:100%;display:flex;gap:12px;align-items:center;background:none;border:0;padding:14px 17px;text-align:left}
+.objcard > button:hover{background:var(--surface-2)}
+.objcard q{font-size:15px;font-weight:600;color:var(--ink)}
+.objbody{padding:0 17px 17px;display:flex;flex-direction:column;gap:14px}
+.objcard:not(.open) .objbody{display:none}
+.caret{color:var(--ink-3);font-size:13px;transition:transform .2s;display:inline-block}
+.objcard.open .caret{transform:rotate(90deg)}
+.beneath{font-size:13.5px;color:var(--ink-2);background:var(--surface-2);border-radius:6px;padding:12px 14px;line-height:1.55}
+.beneath b{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:5px;font-weight:700}
+.quizopts{display:flex;flex-direction:column;gap:7px}
+.qopt{display:flex;gap:11px;text-align:left;border:1px solid var(--line);background:var(--surface-2);border-radius:6px;padding:12px 14px;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.qopt:hover{border-color:var(--line-strong)}
+.qopt .mark{font-size:12px;font-weight:700;color:var(--ink-3);flex:0 0 auto}
+.qopt.right{border-color:var(--lime);background:var(--lime-soft);color:var(--ink)}
+.qopt.right .mark{color:var(--lime-ink)}
+.qopt .okflag{margin-left:auto;align-self:center;font-size:9.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--lime-ink);white-space:nowrap;padding-left:12px}
+.qopt.wrong .mark{text-decoration:line-through}
+.qopt.wrong{border-color:var(--ink-3);background:var(--surface-3);color:var(--ink-3)}
+.fb{font-size:13px;line-height:1.55;padding:12px 14px;border-radius:6px}
+.fb.ok{background:var(--lime-soft);color:var(--ink);border-left:3px solid var(--lime)}
+.fb.no{background:var(--surface-3);color:var(--ink);border-left:3px solid var(--ink-3)}
+.moves{display:grid;gap:10px}
+.move{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.move .n{font-size:11px;color:var(--lime-ink);font-weight:800;padding-top:3px}
+.move b{color:var(--ink);font-weight:700;display:block;margin-bottom:2px}
+.move .said{color:var(--ink);font-size:14.5px;font-weight:500}
+
+/* ---- coach / generators ---- */
+.coach{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface-2);padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.coach textarea{width:100%;min-height:78px;resize:vertical;border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--surface);color:var(--ink);font:inherit;font-size:13.5px;line-height:1.55}
+.coachout{font-size:13.5px;line-height:1.6;color:var(--ink-2);white-space:pre-wrap;border-left:3px solid var(--lime);padding-left:13px}
+.gen{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px}
+.gen label{display:flex;flex-direction:column;gap:6px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.gen input{border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--surface);color:var(--ink);font-family:var(--f);font-size:13.5px;font-weight:400;letter-spacing:0;text-transform:none}
+.genout{margin-top:14px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;font-size:15px;line-height:1.6;color:var(--ink)}
+
+/* ---- checklists / funnel ---- */
+.checks{display:flex;flex-direction:column;gap:6px}
+.checks label{display:flex;gap:11px;align-items:flex-start;padding:10px 13px;border:1px solid var(--line);border-radius:6px;background:var(--surface);font-size:13.5px;line-height:1.5;color:var(--ink-2);cursor:pointer}
+.checks label:hover{border-color:var(--line-strong)}
+.checks input{margin-top:3px;accent-color:var(--lime);flex:0 0 auto}
+.checks input:checked + span{color:var(--ink-3);text-decoration:line-through}
+.funnel{display:flex;flex-direction:column}
+.fstep{display:grid;grid-template-columns:32px minmax(0,1fr);gap:15px;padding:15px 0;border-bottom:1px solid var(--line)}
+.fstep:last-child{border-bottom:0}
+.fstep .num{font-size:12px;color:var(--lime-ink);font-weight:800;padding-top:2px;font-variant-numeric:tabular-nums}
+.fstep h4{font-size:14.5px;font-weight:700;margin-bottom:3px}
+.fstep p{font-size:13.5px;color:var(--ink-2);line-height:1.55}
+.fstep .exit{margin-top:8px;font-size:12.5px;color:var(--ink-3);display:flex;gap:8px}
+.fstep .exit b{color:var(--lime-ink);font-weight:700;flex:0 0 auto}
+
+/* ---- glossary / quiz ---- */
+.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:9px}
+.gitem{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px}
+.gitem b{font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--accent);display:block;margin-bottom:4px}
+.gitem span{font-size:13px;color:var(--ink-2);line-height:1.5}
+.qhead{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
+.qcount{font-size:10.5px;font-weight:700;color:var(--ink-3);letter-spacing:.14em;text-transform:uppercase}
+.qq{font-size:18px;font-weight:600;line-height:1.45;color:var(--ink);margin-bottom:16px}
+.score{text-align:center;padding:30px 18px;display:flex;flex-direction:column;gap:10px;align-items:center}
+.score > b{font-size:54px;font-weight:800;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.score p b{font-weight:700;color:var(--ink)}
+.score p{font-size:14px;color:var(--ink-2);max-width:46ch;line-height:1.55}
+
+/* ---- stat ---- */
+.stat{display:flex;flex-direction:column;gap:3px;padding:15px 17px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);border-top:3px solid var(--lime)}
+.stat b{font-size:26px;font-weight:800;letter-spacing:-.03em;color:var(--ink);font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--ink-2);line-height:1.4}
+
+@media (max-width:920px){
+  .app{grid-template-columns:1fr}
+  .sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}
+  .nav{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:6px;padding:10px 16px 12px;scrollbar-width:thin}
+  .navbtn{width:auto;flex:0 0 auto;border:1px solid var(--line);border-radius:20px;padding:6px 12px;font-size:12.5px;white-space:nowrap}
+  .navbtn[aria-current="true"]{box-shadow:none;border-color:var(--lime)}
+  .sidefoot{flex-direction:row;align-items:center;justify-content:space-between}
+  .progwrap{flex:1;max-width:230px}
+  .scorer{grid-template-columns:1fr}
+  .panel{position:static}
+  .wrap{padding-inline:18px;padding-block:26px 0}
+}
+@media (max-width:520px){
+  .wrap{padding-inline:16px}
+  .gauge b{font-size:38px}
+}
+
+</style>
+<style>
+/* ---- justificação e hifenização ---- */
+.lede,
+.prose p,
+.note,
+.pend,
+.beneath,
+.card p,
+.dosshead p,
+.fstep p,
+.kv .v,
+ul.tick li > span,
+.gitem span,
+.move .said,
+.coachout,
+.genout,
+.tierbox p,
+.score p,
+td{
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+  -webkit-hyphens:auto;
+  hyphenate-limit-chars:4 2 2;
+}
+/* frase única fica alinhada à esquerda */
+h1,h2,h3,h4,
+.eyebrow,
+.sec > .sub,
+.chip,
+.qq,
+.qopt,
+.opt,
+.navbtn,
+.fstep .exit,
+.gen label,
+.qcount,
+.progtxt,
+.brand,
+th,
+.fb,
+.objcard q{
+  text-align:left;
+  hyphens:manual;
+  -webkit-hyphens:manual;
+}
+.score,
+.score p{text-align:center}
+td,
+.tierbox p{hyphenate-limit-chars:5 2 2}
+</style>
+<div class="app" lang="pt-BR">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brandmark" aria-hidden="true"></span>
+      <span><b>LUXSolutions</b><span>Playbook comercial</span></span>
+    </div>
+    <div class="navsearch">
+      <input id="nav-search" type="search" placeholder="Buscar módulo…" aria-label="Buscar módulo">
+    </div>
+    <nav class="nav" id="nav" aria-label="Módulos"></nav>
+    <div class="sidefoot">
+      <div class="progwrap">
+        <div class="progbar"><i id="prog-bar" style="width:0%"></i></div>
+        <span class="progtxt" id="prog-txt">0 / 9</span>
+      </div>
+      <button class="ghost" id="theme-btn" type="button">Tema</button>
+    </div>
+  </aside>
+  <main class="main"><div class="wrap" id="view"></div></main>
+</div>
+<script>
+
+/* =====================================================================
+   PLAYBOOK LUXSOLUTIONS v6
+   Conteúdo consolidado a partir do Manual Comercial v5 + base de
+   conhecimento institucional da Lux Energia.
+   ===================================================================== */
+
+
+/* ---------- 1. Qualificação: Índice de Aderência LUX ---------- */
+const DIMS = [
+  {id:"escala", nome:"Escala", hint:"UCs, ativos ou condomínios sob gestão",
+   opts:[{p:0,t:"1 a 3 unidades"},{p:1,t:"4 a 7 unidades"},{p:2,t:"8 a 19 unidades"},{p:3,t:"20+ unidades"}]},
+  {id:"volume", nome:"Volume operacional", hint:"Faturas e documentos processados por mês",
+   opts:[{p:0,t:"Menos de 10 faturas/mês"},{p:1,t:"10 a 29 faturas/mês"},{p:2,t:"30 a 99 faturas/mês"},{p:3,t:"100+ faturas ou alto volume documental"}]},
+  {id:"complex", nome:"Complexidade", hint:"Fontes, utilities, regiões e áreas envolvidas",
+   opts:[{p:0,t:"Uma fonte, uma utility, uma região"},{p:1,t:"Poucas fontes, pouca variação"},{p:2,t:"Múltiplas fontes ou regiões"},{p:3,t:"Múltiplas utilities, regras e áreas envolvidas"}]},
+  {id:"gestao", nome:"Gestão central", hint:"Existe alguém responsável por consolidar?",
+   opts:[{p:0,t:"Não existe, cada unidade resolve"},{p:1,t:"Alguém acumula de forma informal"},{p:2,t:"Responsável parcial, sem rotina firme"},{p:3,t:"Equipe dedicada com relatórios recorrentes"}]},
+  {id:"dor", nome:"Dor operacional", hint:"O que já custou dinheiro, prazo ou credibilidade",
+   opts:[{p:0,t:"Nenhuma dor declarada"},{p:1,t:"Incômodo pontual, sem consequência"},{p:2,t:"Retrabalho relevante e recorrente"},{p:3,t:"Erro, atraso, multa ou perda de visibilidade já com consequência"}]},
+  {id:"dados", nome:"Dados disponíveis", hint:"Matéria-prima que a plataforma pode capturar",
+   opts:[{p:0,t:"Quase nenhum dado acessível"},{p:1,t:"Faturas em PDF dispersas"},{p:2,t:"Faturas e histórico organizados"},{p:3,t:"Faturas, contratos, portais, BMS, APIs ou telemetria"}]},
+  {id:"gatilho", nome:"Gatilho", hint:"O evento que faz isso ser agora, e não depois",
+   opts:[{p:0,t:"Nenhum evento à vista"},{p:1,t:"Curiosidade, benchmarking"},{p:2,t:"Projeto ou orçamento já aprovado"},{p:3,t:"Migração, ESG, auditoria, M&A, expansão ou renovação com data"}]}
+];
+const TIERS = [
+  {id:"A",min:16,max:21,nome:"Alta aderência",cor:"a",
+   acao:"Prioridade máxima. Monte caso de negócio, envolva várias áreas e trate como oportunidade nomeada no funil.",
+   passo:"Agendar diagnóstico de 45 min com o patrocinador e mais uma área (Financeiro, TI ou ESG)."},
+  {id:"B",min:11,max:15,nome:"Aderente",cor:"b",
+   acao:"Prossiga se houver patrocinador interno identificado e gatilho com data. Sem os dois, trate como C.",
+   passo:"Confirmar o patrocinador pelo nome e descobrir o relógio do cliente antes de investir em demonstração."},
+  {id:"C",min:7,max:10,nome:"Oportunidade",cor:"c",
+   acao:"Não gaste um ciclo completo. Caminhos: nutrição, oferta integrada ao serviço de gestão ou piloto controlado de escopo curto.",
+   passo:"Oferecer conteúdo ou um diagnóstico rápido e reavaliar em 90 dias, ou levar como cross-sell da gestão de energia."},
+  {id:"D",min:0,max:6,nome:"Fora do PIC",cor:"d",
+   acao:"Não abra oportunidade. Registre o motivo e o que precisaria mudar para reentrar no radar.",
+   passo:"Encerrar com elegância e marcar o evento que faria a conta voltar (expansão, troca de gestão, novo gatilho)."}
+];
+
+
+/* ---------- 2. Cenários de cliente ---------- */
+const SEGMENTOS = [
+{id:"saude", nome:"Saúde multiponto", entrada:"Venda independente da plataforma", tier:"A",
+ perfil:"Redes hospitalares, laboratórios de análises clínicas e clínicas de imagem com dezenas a centenas de pontos, facilities centralizada e operação 24/7.",
+ porque:["Utilities críticas: energia e água não podem faltar e têm contingência cara","Resíduos de serviço de saúde com custo e obrigação legal","Acreditação (ONA, JCI) e pressão de operadoras por indicadores","Expansão por aquisição cria unidades com padrões diferentes"],
+ naoE:"Unidades isoladas, sem gestão central e sem obrigação de reporte.",
+ gatilho:"Aquisição ou abertura de unidades, ciclo de acreditação, meta de custo por leito ou por exame, migração ao mercado livre.",
+ relogio:"Ciclo orçamentário anual, janela de migração ao ACL (denúncia do contrato cativo), auditoria de acreditação.",
+ spin:["Quantas unidades entram nessa gestão hoje e quem consolida as faturas de todas elas?","Quanto tempo passa entre a fatura chegar e alguém perceber que uma unidade saiu do padrão?","Quando uma unidade estoura demanda ou toma multa contratual, quem descobre, e em quanto tempo?"],
+ demo:["Captura de faturas de múltiplas distribuidoras num único fluxo","Comparação de desempenho entre unidades com consumo normalizado","Alertas de ultrapassagem de demanda e de vencimento com responsável nomeado"],
+ pessoas:"Patrocinador: Diretor de Operações ou Infraestrutura. Decisor: CFO. Viabilizadores: TI, Suprimentos, Qualidade/ESG."},
+
+{id:"varejo", nome:"Varejo e redes", entrada:"Venda independente da plataforma", tier:"A",
+ perfil:"Redes de lojas, farmácias, supermercados e food service, de dezenas a milhares de UCs, com abertura e fechamento de pontos ao longo do ano.",
+ porque:["Muitas distribuidoras e regras tarifárias diferentes na mesma carteira","Alta rotatividade de pontos: titularidade, religação, encerramento","Comparação de desempenho loja a loja é decisão de operação, não de energia","Conciliação de faturas raramente tem dono claro"],
+ naoE:"Rede pequena, pouca padronização, baixa centralização e foco exclusivo em preço.",
+ gatilho:"Plano de expansão, programa de redução de despesa operacional, migração de carteira ao ACL, troca de operador de facilities.",
+ relogio:"Calendário de aberturas, safra de renovação de aluguéis, fechamento de exercício.",
+ spin:["Quantas UCs entram e saem da carteira por mês, e como isso é registrado?","Quem confere se a fatura de uma loja fechada parou de chegar?","Qual foi a última vez que vocês recuperaram um valor cobrado a mais por uma distribuidora?"],
+ demo:["Carteira de UCs com status, titularidade e responsável","Auditoria de fatura: exceções e valores fora da curva","Ranking de lojas por consumo normalizado e por custo unitário"],
+ pessoas:"Patrocinador: Gerente de Facilities ou Manutenção. Decisor: Diretor de Operações ou Controladoria. Viabilizadores: Expansão, Fiscal, TI."},
+
+{id:"bancos", nome:"Bancos e serviços financeiros", entrada:"Venda independente da plataforma", tier:"A",
+ perfil:"Redes de agências, prédios corporativos e data centers, com área de properties estruturada e compromissos públicos de sustentabilidade.",
+ porque:["Volume documental muito alto e exigência de rastreabilidade","Metas públicas de emissões e de energia renovável, com dado auditado","Fornecedores múltiplos e necessidade de consolidar","Auditoria interna cobra evidência, não estimativa"],
+ naoE:"Utilities descentralizadas por regional sem coordenação, ou solução atual já cobrindo a necessidade com dado auditável.",
+ gatilho:"Ciclo de relato de sustentabilidade, auditoria interna, consolidação de fornecedores, meta de renovável aprovada pelo conselho.",
+ relogio:"Fechamento do relatório anual, janela de auditoria, ciclo orçamentário.",
+ spin:["Como vocês comprovam hoje o dado que vai para o relatório anual?","Quanto tempo o time gasta para fechar o inventário e quantas pessoas participam?","O que aconteceria se o auditor pedisse a evidência de uma agência específica de oito meses atrás?"],
+ demo:["Trilha de evidências: documento, origem, data e responsável","Inventário de emissões, energia renovável e I-REC com lastro","Visão de portfólio por regional com metas e desvios"],
+ pessoas:"Patrocinador: Superintendência de Infraestrutura ou Properties. Decisor: Diretoria. Viabilizadores: Segurança da Informação, Compras, ESG, Jurídico."},
+
+{id:"educacao", nome:"Educação", entrada:"Venda independente da plataforma", tier:"B",
+ perfil:"Grupos educacionais, campi universitários e redes de escolas, com grandes áreas construídas e sazonalidade forte.",
+ porque:["Grandes áreas e múltiplas utilities, com água pesando na conta","Sazonalidade letiva torna o desvio visível quando há baseline","Comparação entre campi é acionável para o time de infraestrutura","Consolidação pós-aquisição deixa padrões diferentes convivendo"],
+ naoE:"Operação muito descentralizada, sem patrocinador interno e sem orçamento de infraestrutura próprio.",
+ gatilho:"Pressão de margem, consolidação após aquisição, projeto de eficiência ou geração distribuída, meta de custo por aluno.",
+ relogio:"Calendário letivo, com janela de obra nas férias; orçamento anual; safra de matrícula.",
+ spin:["O consumo cai quanto nas férias, em percentual, comparado ao período letivo?","Quem compara hoje um campus com outro, e com que frequência?","Quanto da conta de água de vocês é possível explicar linha a linha?"],
+ demo:["Curva sazonal e baseline por campus","Água e energia na mesma visão operacional","Metas por unidade com alerta de desvio"],
+ pessoas:"Patrocinador: Diretor de Infraestrutura ou Operações. Decisor: CFO ou Mantenedora. Viabilizadores: TI, Compras."},
+
+{id:"multisite", nome:"Hotelaria, logística, shoppings e telecom", entrada:"Venda independente da plataforma", tier:"A",
+ perfil:"Operações com alto custo de utilities e muitos medidores ou sites, frequentemente com rateio ou repasse para terceiros.",
+ porque:["Energia entre as três maiores despesas operacionais","Rateio e reembolso para lojistas, clientes ou condôminos","Sites remotos e de difícil visita, no caso de telecom e logística","Comparação de desempenho em escala é vantagem competitiva direta"],
+ naoE:"Baixo volume, sem dor de consolidação e conversa girando exclusivamente em preço de energia.",
+ gatilho:"Pressão de margem, disputa de rateio, expansão de sites, migração ao mercado livre, renovação de contrato de locação.",
+ relogio:"Alta e baixa temporada, fechamento mensal do rateio, renovação de contratos de locação.",
+ spin:["Como o rateio é calculado hoje e com que frequência ele é contestado?","Quanto tempo leva, em dias, para fechar o rateio do mês?","Quando um lojista questiona a conta, em quanto tempo vocês conseguem provar o número?"],
+ demo:["Rateio e conciliação com memória de cálculo","Comparação por site com consumo normalizado","Água, energia e gás por metro quadrado ou por site"],
+ pessoas:"Patrocinador: Gerência de Facilities ou Operações. Decisor: Diretor de Operações. Viabilizadores: Controladoria, Jurídico (contratos de rateio), TI."},
+
+{id:"industria", nome:"Indústria multiplanta", entrada:"Cross-sell do serviço de gestão", tier:"A",
+ perfil:"Indústrias com múltiplas plantas, na maioria já no mercado livre, com energia, água e gás relevantes no custo de produção.",
+ porque:["Já existem obrigações CCEE, medição e contabilização para governar","Energia é insumo, então o indicador é por tonelada produzida, não por mês","Exigência de cliente e de exportação sobre pegada de carbono","Água e gás normalmente não têm nenhuma gestão comparável à de energia"],
+ naoE:"Planta única, consumo estável e equipe própria já com rotina de gestão e ferramenta adequada.",
+ gatilho:"Janela de recontratação de energia, exigência de cliente ou de exportação, projeto de eficiência, auditoria.",
+ relogio:"Janela de recontratação, ciclo de contabilização e liquidação da CCEE, orçamento.",
+ spin:["Quem acompanha a exposição e o balanço energético hoje, e com que periodicidade?","Quando foi a última vez que vocês compararam o contratado com o medido, planta a planta?","O que acontece com o contrato quando a produção muda o volume no meio do ano?"],
+ demo:["Contratos, medição e balanço energético lado a lado","Obrigações e prazos da CCEE com responsável e evidência","Energia, água e gás por planta e por unidade produzida"],
+ pessoas:"Patrocinador: Gerente de Utilidades ou Energia. Decisor: Diretor Industrial ou CFO. Viabilizadores: Suprimentos, Jurídico, TI/OT."},
+
+{id:"fii", nome:"Gestoras de FII e asset managers", entrada:"Entrada por Real Estate", tier:"A",
+ perfil:"Fundos imobiliários, gestoras de ativos e family offices com portfólio operado por administradoras e property managers terceirizados.",
+ porque:["Precisam de camada própria de controle acima de quem executa","Consolidação de ativos, contratos, fornecedores e documentos","Cobrança de cotistas e comitê por relatório comparável","Utilities entram direto na linha de NOI"],
+ naoE:"Poucos imóveis, baixa complexidade e nenhuma necessidade de visão consolidada de portfólio.",
+ gatilho:"Crescimento do portfólio, meta de NOI, exigência de cotistas, certificação de ativos, troca de administradora.",
+ relogio:"Fechamento trimestral do fundo, assembleia, ciclo de relatório aos cotistas, renovação de contratos de locação.",
+ spin:["Como o dado de utilities dos ativos chega até vocês hoje, e em quanto tempo depois do fechamento?","O que vocês conseguem comparar entre dois ativos administrados por administradoras diferentes?","O que o cotista ou o comitê pergunta que hoje é difícil responder com evidência?"],
+ demo:["Visão consolidada de portfólio por fundo e por ativo","Comparação entre ativos e entre administradoras","Pacote de fechamento e relatório executivo para o comitê"],
+ pessoas:"Patrocinador: Head de Asset Management. Decisor: Gestor do fundo. Viabilizadores: Controller, RI, administradoras.",
+ refs:"Perfis-referência para calibrar a conta: Pátria, Tellus, Hedge, Vinci Compass. São perfis de mercado, não indicam contratação ou parceria."},
+
+{id:"administradoras", nome:"Administradoras de condomínios", entrada:"Entrada por Real Estate", tier:"B",
+ perfil:"Administradoras com carteira relevante — 30 ou mais condomínios costuma ser o ponto em que a dor de padronização fica clara.",
+ porque:["Querem crescer a carteira sem crescer a equipe na mesma proporção","Padronização do que sai da casa é retenção de contrato","Governança em escala: documentos, contratos, prazos e níveis de serviço","Nível de serviço varia demais de um analista para outro"],
+ naoE:"Carteira pequena, operação informal e nenhuma intenção de crescer.",
+ gatilho:"Crescimento de carteira, perda de contrato por qualidade, troca de sistema, aumento do custo de equipe.",
+ relogio:"Safra de renovação dos contratos com os condomínios, calendário de assembleias, orçamento anual do condomínio.",
+ spin:["Quantos condomínios cada analista atende hoje, e qual é o teto antes de cair a qualidade?","O que muda de um analista para outro naquilo que chega ao síndico?","Quantos contratos vocês perderam nos últimos doze meses, e o motivo declarado foi qual?"],
+ demo:["Padronização de fluxos e nível de serviço por condomínio","Pacote de prestação de contas pronto para assembleia","Carteira, pendências e responsáveis numa visão só"],
+ pessoas:"Patrocinador: Gerente de Operações. Decisor: Sócio ou Diretor. Viabilizadores: TI, líderes de célula.",
+ refs:"Perfil-referência: OMA. É perfil de mercado, não indica contratação ou parceria."},
+
+{id:"sindicos", nome:"Sindicância profissional", entrada:"Entrada por Real Estate", tier:"B",
+ perfil:"Empresas de síndico profissional com carteira a partir de 10 condomínios, com aderência maior a partir de 20.",
+ porque:["Já existe equipe, processo e carteira: a dor é escala e evidência","O trabalho é feito, mas não fica registrado de forma defensável","Assembleia cobra transparência e comparação","Crescimento esbarra na capacidade de acompanhamento"],
+ naoE:"Um condomínio isolado ou carteira sem equipe: o valor da plataforma completa não se paga.",
+ gatilho:"Crescimento de carteira, assembleia difícil, exigência de transparência, disputa com fornecedor.",
+ relogio:"Calendário de assembleias e prestação de contas mensal.",
+ spin:["Como você mostra hoje, numa assembleia, o que foi feito no mês?","O que consome mais tempo entre o chamado entrar e a prestação de contas sair?","Quantos condomínios você consegue atender com a estrutura atual sem perder qualidade?"],
+ demo:["Chamados e manutenção com histórico e evidência","Financeiro, contratos e fornecedores por condomínio","Pacote mensal pronto para assembleia"],
+ pessoas:"Patrocinador e decisor costumam ser a mesma pessoa: o sócio ou o síndico responsável.",
+ refs:"Perfil-referência: Insight Síndicos. É perfil de mercado, não indica contratação ou parceria."},
+
+{id:"gestao-lux", nome:"Cliente que já contrata a gestão (poucas UCs)", entrada:"Plataforma integrada ao serviço de gestão", tier:"C",
+ perfil:"Cliente que já contrata o serviço de gestão de energia, com poucas unidades, sem o volume que justificaria a venda independente.",
+ porque:["A relação já existe e o dado já está na casa","A plataforma vira camada de transparência do serviço que ele já paga","Reduz atrito de reporte e dependência do gestor por e-mail","Cria base para expansão futura para utilities e Real Estate"],
+ naoE:"Não há mínimo rígido aqui. O que não existe é vender módulo isolado sem nenhuma dor de reporte declarada.",
+ gatilho:"Reclamação de falta de visibilidade, troca de interlocutor no cliente, renovação do contrato de gestão.",
+ relogio:"Renovação do contrato de gestão e ciclo de reporte mensal.",
+ spin:["Como a informação da gestão chega até você hoje e quem mais na empresa precisa dela?","O que você precisa mostrar internamente que hoje depende de pedir para o gestor?","Se a diretoria pedisse o número agora, quanto tempo levaria?"],
+ demo:["A própria carteira do cliente já dentro da plataforma","Relatório executivo gerado sem pedir nada a ninguém","Histórico e evidências de obrigações do ACL"],
+ pessoas:"Alinhe com o gestor de conta ANTES de abordar. Ele é o dono do relacionamento e a abordagem sai por ele."}
+];
+
+
+/* ---------- 3. Objeções: banco + treinador ---------- */
+const OBJ = [
+{id:"ja-temos-sistema", obj:"Já temos sistema.", tags:["Comum","Todos os segmentos"],
+ beneath:"Quase nunca significa que a necessidade está coberta. Significa que existe um investimento já feito que a pessoa precisa defender, ou que ela não quer abrir mais uma frente de projeto. O sistema que existe costuma resolver um pedaço (ERP, financeiro, condominial) e parar exatamente onde começa a consolidação.",
+ moves:[
+  {b:"Reconhecer sem recuar", t:"Ótimo. Não faria sentido trocar algo que funciona, e não é isso que eu estou propondo."},
+  {b:"Reposicionar com pergunta", t:"Onde ainda existe consolidação manual entre o sistema, a fatura, o contrato e a decisão? Normalmente o sistema termina no lançamento e alguém continua montando a visão na planilha."},
+  {b:"Pedido", t:"Me mostra o caminho que um dado percorre hoje, da fatura até o relatório da diretoria. Vinte minutos, com a pessoa que faz isso na prática."}],
+ erro:"Atacar o sistema atual ou listar funcionalidades que ele não tem. Isso obriga a pessoa a defender a decisão que ela tomou, e a conversa acaba ali.",
+ quiz:{
+  pergunta:"O cliente diz que já tem sistema. Qual resposta abre a conversa em vez de fechar?",
+  opts:[
+   {t:"Qual sistema vocês usam? Porque ele normalmente não faz leitura automática de faturas nem comparação entre unidades.", ok:false, fb:"Isso ataca a decisão que a pessoa já tomou. Ela passa a defender o sistema em vez de examinar o processo."},
+   {t:"Ótimo, não faria sentido trocar algo que funciona. Onde ainda existe consolidação manual entre o sistema, a fatura, o contrato e a decisão?", ok:true, fb:"Reconhece, não ameaça a decisão anterior e move a conversa para o espaço entre os sistemas, que é onde a dor mora."},
+   {t:"Entendo. Posso te mandar um comparativo das nossas funcionalidades com o que você tem hoje?", ok:false, fb:"Vira disputa de features e transfere o trabalho de comparar para o cliente, que não tem tempo nem critério para fazer isso a seu favor."}]}},
+
+{id:"excel-funciona", obj:"O Excel funciona.", tags:["Comum"],
+ beneath:"Geralmente é verdade, e é por isso que é perigoso responder que não funciona. O Excel funciona até um ponto: quando o volume cresce, quando a pessoa que mantém a planilha sai, quando alguém pede o histórico, ou quando duas versões do arquivo discordam.",
+ moves:[
+  {b:"Concordar de verdade", t:"Funciona mesmo, e enquanto funcionar não há motivo para mudar."},
+  {b:"Localizar o limite", t:"Em qual parte ele começa a dar mais trabalho: captura, prazo, conciliação, comparação, auditoria, ou dependência de uma pessoa específica?"},
+  {b:"Pedido", t:"Quem mantém a planilha hoje? Queria trinta minutos com essa pessoa, porque é ela que sabe onde dói."}],
+ erro:"Dizer que planilha é frágil ou amadora. A planilha é obra de alguém que está na reunião, ou do chefe de alguém que está.",
+ quiz:{
+  pergunta:"Qual pergunta faz o cliente descobrir sozinho o limite do Excel?",
+  opts:[
+   {t:"Você já pensou no risco de ter tudo numa planilha?", ok:false, fb:"Pergunta retórica com resposta óbvia. O cliente responde que sim e a conversa não anda."},
+   {t:"Em qual parte ele começa a dar mais trabalho: captura, prazo, conciliação, comparação, auditoria ou dependência de uma pessoa?", ok:true, fb:"Dá opções concretas, cada uma um caminho de diagnóstico. O cliente escolhe a dor dele e você já sabe por onde seguir."},
+   {t:"E se a pessoa que faz a planilha sair da empresa amanhã?", ok:false, fb:"Bom argumento, péssimo momento. É hipótese de risco antes de haver confiança, e soa como pressão."}]}},
+
+{id:"e-caro", obj:"É caro.", tags:["Comum","Negociação"],
+ beneath:"Raramente é sobre o valor absoluto. É sobre o valor não ter ficado maior que o esforço de mudar, ou sobre a pessoa não ter argumento para defender a compra internamente. Se ela precisa defender a decisão, o que falta não é desconto, é munição.",
+ moves:[
+  {b:"Adiar com permissão", t:"Preço é um ponto que a gente vai resolver. Antes disso, queria confirmar o que precisa acontecer para essa operação valer a pena para você, para eu montar o pacote certo e não só um número menor. Tudo bem?"},
+  {b:"Comparar com o custo real", t:"Comparado com o quê? Queria colocar na mesa o custo atual em horas do time, risco de erro, atraso e decisão tomada com pouca visibilidade. É contra isso que o investimento precisa ganhar."},
+  {b:"Pedido", t:"Me diz o número que fecha a conta do seu lado, e o que ele precisa alcançar. Com isso eu volto com a combinação de escopo e prazo que chega lá."}],
+ erro:"Dar desconto sem contrapartida, ou defender o preço na primeira frase. Concessão de graça ensina o cliente a pedir de novo.",
+ quiz:{
+  pergunta:"O cliente diz que está caro. Qual é o primeiro movimento?",
+  opts:[
+   {t:"Explicar o retorno do investimento e quanto ele economiza por mês.", ok:false, fb:"É a resposta certa na hora errada. Sem entender o que 'caro' significa para essa pessoa, o retorno vira um argumento genérico contra uma objeção específica."},
+   {t:"Perguntar qual é o orçamento disponível para enquadrar a proposta.", ok:false, fb:"Entrega o controle do preço antes de estabelecer o valor. A negociação passa a acontecer só em preço."},
+   {t:"Pedir licença para entender o que precisa acontecer para valer a pena, antes de responder sobre preço.", ok:true, fb:"Reconhecer e adiar com permissão. Você promete que vai falar de preço, ganha o direito de entender antes, e evita que a conversa vire leilão."}]}},
+
+{id:"sem-telemetria", obj:"Não temos telemetria e nossos dados não estão organizados.", tags:["Técnica"],
+ beneath:"É medo de não estar pronto, não falta de interesse. Muitas vezes vem junto com vergonha do estado atual. Tratar como pré-requisito eliminado destrava a conversa na hora.",
+ moves:[
+  {b:"Remover o pré-requisito", t:"Isso não impede começar. A maior parte das operações começa exatamente assim."},
+  {b:"Mostrar o caminho", t:"Podemos partir de faturas, portais, contratos e histórico, e aumentar a granularidade conforme a operação evolui. Telemetria é um passo posterior, não uma condição de entrada."},
+  {b:"Pedido", t:"Me manda as faturas de três unidades de um mês qualquer. Com isso eu te mostro o que já dá para ver sem nenhum investimento novo."}],
+ erro:"Confirmar que sem dado não dá para fazer nada, ou entrar num levantamento técnico longo que empurra a decisão para o trimestre seguinte.",
+ quiz:{
+  pergunta:"O cliente diz que os dados dele são uma bagunça. Qual é o melhor próximo passo?",
+  opts:[
+   {t:"Propor um diagnóstico de dados de 30 dias antes de falar de plataforma.", ok:false, fb:"Transforma uma objeção em projeto. Cria custo, prazo e uma aprovação a mais antes de existir valor demonstrado."},
+   {t:"Pedir as faturas de três unidades de um mês qualquer para mostrar o que já dá para ver.", ok:true, fb:"Pedido pequeno, concreto e verificável. Prova o valor com o material que já existe e elimina o pré-requisito imaginário."},
+   {t:"Explicar que a plataforma tem leitura por inteligência artificial e resolve isso.", ok:false, fb:"Responde com funcionalidade uma objeção que é de insegurança. O cliente continua sem saber o que acontece na prática com os dados dele."}]}},
+
+{id:"manda-proposta", obj:"Manda uma proposta primeiro.", tags:["Processo"],
+ beneath:"Pode ser interesse real com pressa, pode ser jeito educado de encerrar, e em cerca de uma a cada cinco vezes é diligência: o cliente já escolheu outro fornecedor e precisa de cotação comparativa. O teste que separa é pedir algo em troca.",
+ moves:[
+  {b:"Nomear o risco", t:"Posso mandar algo genérico, mas existe um risco concreto de a gente errar o escopo, e proposta errada atrasa mais do que ajuda."},
+  {b:"Trocar", t:"Se validarmos três pontos agora — quantas unidades entram, quais dados existem e quem precisa aprovar — eu devolvo algo muito mais aderente."},
+  {b:"Pedido", t:"Trinta minutos esta semana com você e com quem vai avaliar. Terça às 10h ou quarta às 16h?"}],
+ erro:"Mandar a proposta para não perder o cliente. Proposta sem diagnóstico vira tabela de preço e a conversa passa a ser só sobre número.",
+ quiz:{
+  pergunta:"Como identificar se o pedido de proposta é diligência (cotação comparativa) e não interesse real?",
+  opts:[
+   {t:"Perguntar diretamente se eles já têm outro fornecedor escolhido.", ok:false, fb:"A resposta será não, mesmo quando for sim. A pergunta não tem custo para quem responde, então não separa nada."},
+   {t:"Pedir acesso a quem assina, em troca de continuar investindo na proposta. Quem quer comprar abre a agenda.", ok:true, fb:"É o teste que custa alguma coisa para o outro lado. Quem está cotando dá resposta vaga; quem quer comprar marca a reunião."},
+   {t:"Mandar uma proposta com preço alto para ver a reação.", ok:false, fb:"Queima a credibilidade e ainda serve de cotação comparativa, que era exatamente o que se queria evitar."}]}},
+
+{id:"ti-vai-barrar", obj:"A TI vai barrar.", tags:["Técnica","Consenso"],
+ beneath:"Pode ser requisito técnico real, pode ser prioridade (a TI tem fila) ou pode ser desculpa educada. São três problemas diferentes e cada um tem um caminho. Tratar os três como o mesmo é o erro.",
+ moves:[
+  {b:"Separar os três casos", t:"Vamos entender se o ponto é requisito técnico, fila de prioridade ou momento. Cada um tem uma saída diferente."},
+  {b:"Antecipar em vez de evitar", t:"Se for técnico, envolver a TI cedo elimina risco antes de qualquer proposta final. O pior cenário é descobrir a exigência depois que o comercial já está fechado."},
+  {b:"Pedido", t:"Me indica o nome da pessoa da TI. Eu levo o material de arquitetura, segurança e integração para uma conversa de trinta minutos, com você na sala."}],
+ erro:"Aceitar a objeção e seguir apenas com o patrocinador. A conta avança até o fim e morre na última etapa.",
+ quiz:{
+  pergunta:"Qual postura reduz o risco de a TI derrubar a oportunidade no final?",
+  opts:[
+   {t:"Evitar a TI até a proposta estar fechada, para não criar atrito.", ok:false, fb:"É o caminho mais comum e o que mais mata negócio. O veto chega quando não há mais tempo de responder."},
+   {t:"Envolver a TI cedo, com material de segurança e integração, e o patrocinador na sala.", ok:true, fb:"Transforma um risco de veto em requisito conhecido, e ainda protege o patrocinador de ser surpreendido."},
+   {t:"Pedir ao patrocinador que resolva internamente com a TI.", ok:false, fb:"Delega para alguém sem o material nem o repertório técnico para defender. O assunto volta semanas depois, pior."}]}},
+
+{id:"status-quo", obj:"Vamos ver mais para frente.", tags:["Trava","Comum"],
+ beneath:"A trava mais comum e a mais invisível. O cliente não está comparando você com um concorrente, está comparando mexer com não mexer, e não mexer parece de graça. Enquanto adiar for gratuito, adiar é a decisão racional.",
+ moves:[
+  {b:"Dar preço ao adiamento", t:"Quanto custa cada mês de espera, com número real do cliente, e o que se perde de forma irrecuperável quando a janela fecha."},
+  {b:"Usar o relógio dele", t:"Ancore numa data do mundo do cliente: janela de recontratação, fechamento de exercício, assembleia, ciclo de auditoria. Fato não se discute, se agenda."},
+  {b:"Pedido", t:"Uma decisão binária com data, não mais uma reunião. Se a resposta for não, eu prefiro saber agora e te procurar em janeiro."}],
+ erro:"Marcar mais uma reunião de acompanhamento. Reunião sem decisão é o combustível do adiamento.",
+ quiz:{
+  pergunta:"Qual urgência funciona contra o status quo?",
+  opts:[
+   {t:"A condição comercial vale só até o fim do mês.", ok:false, fb:"É pressão de vendedor, e o cliente reconhece na hora. Costuma queimar confiança e ainda ensina que existe desconto esperando."},
+   {t:"A janela de recontratação fecha em 30/09 e depois disso o preço discutido não existe mais.", ok:true, fb:"É um fato do calendário do cliente. Fato não se discute, se agenda — e a urgência deixa de ser sua."},
+   {t:"Nosso time de implantação tem agenda só até novembro.", ok:false, fb:"Escassez artificial e verificável como falsa. Se o cliente testar, você perde a negociação inteira."}]}},
+
+{id:"ja-tenho-lux", obj:"Já contrato a gestão de energia de vocês. Por que pagar por mais uma coisa?", tags:["Cross-sell","Nova"],
+ beneath:"Objeção legítima de quem já paga e não vê a fronteira entre o serviço e a plataforma. Se o comercial não souber explicar o que muda, o cliente conclui, com razão, que está sendo cobrado duas vezes pela mesma coisa.",
+ moves:[
+  {b:"Separar serviço de camada", t:"O que você contrata hoje é a gestão: alguém que negocia, representa e responde pela sua operação na CCEE. O que estamos falando agora é a camada que faz essa informação chegar até você e até as outras áreas sem depender de pedir."},
+  {b:"Ancorar no que já dói", t:"Quantas vezes no último trimestre alguém da sua empresa precisou pedir um número que a operação já tinha? O custo aqui é tempo de espera e decisão atrasada, não o serviço."},
+  {b:"Pedido", t:"Alinho com o seu gestor de conta e trago a sua própria carteira já dentro da plataforma, para você ver o seu dado e não uma demonstração genérica. Quinze minutos."}],
+ erro:"Abordar o cliente sem alinhar com o gestor de conta. Atropelar o relacionamento existente custa mais do que a venda vale.",
+ quiz:{
+  pergunta:"Antes de oferecer a plataforma a um cliente que já contrata a gestão, o que vem primeiro?",
+  opts:[
+   {t:"Agendar direto com o contato do cliente, já que a relação existe.", ok:false, fb:"Atropela o dono do relacionamento. O gestor de conta perde credibilidade e o cliente percebe descoordenação interna."},
+   {t:"Alinhar com o gestor de conta e entrar por ele, com o dado real do cliente na demonstração.", ok:true, fb:"Preserva o relacionamento, usa o conhecimento de quem já atende e torna a demonstração específica em vez de genérica."},
+   {t:"Mandar um e-mail institucional com a apresentação da plataforma.", ok:false, fb:"Trata um cliente da casa como prospect frio. Desperdiça a maior vantagem que existe nessa conta, que é o dado já estar dentro."}]}},
+
+{id:"lgpd-dados", obj:"Para onde vão os meus dados? E a LGPD?", tags:["Técnica","Jurídica","Nova"],
+ beneath:"Vem de TI, Segurança da Informação, Jurídico ou Compliance, e às vezes do próprio patrocinador antecipando o veto. É pergunta de gente que quer avançar, não obstáculo. O erro é improvisar uma resposta técnica.",
+ moves:[
+  {b:"Tratar como requisito, não como objeção", t:"Essa é uma pergunta de quem está levando a sério. Vou te responder o que eu sei com precisão e o que eu não sei eu trago por escrito."},
+  {b:"Dar o enquadramento contratual", t:"Os contratos tratam proteção de dados sob a Lei 13.709/2018 e confidencialidade com prazo definido. O escopo do que é coletado, por quanto tempo fica e quem acessa entra no anexo técnico, não fica no verbal."},
+  {b:"Pedido", t:"Me indica a pessoa de Segurança da Informação. Eu levo o material técnico e respondo o questionário de fornecedor de vocês, se houver."}],
+ erro:"Responder de improviso sobre criptografia, servidor, retenção ou subprocessadores. Se você não tem o dado documentado, escale. Resposta errada aqui é irreversível.",
+ quiz:{
+  pergunta:"A TI pergunta onde os dados ficam hospedados e por quanto tempo. Você não tem certeza. O que fazer?",
+  opts:[
+   {t:"Dar a resposta mais provável para não parecer despreparado.", ok:false, fb:"É o pior caminho. Uma resposta técnica errada será conferida, e o custo é a credibilidade de toda a proposta."},
+   {t:"Dizer que traz a resposta por escrito, e nomear até quando.", ok:true, fb:"Transparência com prazo. Preserva credibilidade e transforma a dúvida num próximo passo datado, que é o que você queria de qualquer forma."},
+   {t:"Dizer que é confidencial e só se discute depois do contrato assinado.", ok:false, fb:"Cria desconfiança exatamente na área que pode vetar a compra. Segurança da informação não assina em branco."}]}},
+
+{id:"lock-in", obj:"E se eu quiser sair depois? Fico preso?", tags:["Dados"],
+ beneath:"É a pergunta de quem está considerando fechar, então ouça como sinal de compra. Por trás dela está um medo específico: entregar a informação da operação e depois não conseguir levá-la embora.",
+ moves:[
+  {b:"Responder direto", t:"Pergunta certa, e a resposta é simples: os dados são seus. A plataforma organiza a informação da sua operação, ela não passa a ser nossa em nenhum momento."},
+  {b:"Tirar o medo do caminho", t:"Você continua dono da base e consegue extrair o que precisar, durante a relação e no encerramento dela. Se um dia sair, você sai com a informação organizada, não com um buraco."},
+  {b:"Pedido", t:"Se esse ponto precisa ficar registrado para a sua TI ou o seu jurídico, me diz quem é a pessoa. Eu levo isso por escrito junto com os outros pontos que você quiser fechar."}],
+ erro:"Prometer o que não está escrito. Condição contratual não se negocia no verbal: se a conversa for para esse lado, o assunto volta na proposta, com quem redige.",
+ quiz:{
+  pergunta:"O cliente pergunta o que acontece com a informação dele se um dia a relação terminar. Qual é a melhor resposta?",
+  opts:[
+   {t:"Que isso é assunto de contrato e se resolve mais para frente.", ok:false, fb:"Empurra para depois uma pergunta que é sinal de compra, e deixa no ar exatamente o medo que a gerou."},
+   {t:"Que os dados são dele: continua dono da base e leva a informação organizada consigo.", ok:true, fb:"É a resposta, e é verdadeira. A dependência que ele teme não existe: a plataforma organiza a informação da operação dele, ela não passa a ser nossa."},
+   {t:"Que ninguém sai depois de ver o ganho que a plataforma entrega.", ok:false, fb:"Desconversa. A pessoa perguntou porque precisa de garantia, não de otimismo, e responder assim aumenta a desconfiança."}]}},
+
+{id:"quem-usa", obj:"Quem já usa isso? Me mostra um caso.", tags:["Prova"],
+ beneath:"Pedido de redução de risco. A pessoa quer saber se alguém do porte dela já passou por isso e saiu bem. Muitas vezes é também o material de que ela precisa para defender a escolha internamente, então responder bem aqui é dar munição a um aliado.",
+ moves:[
+  {b:"Trazer robustez de operação", t:"Operamos contas de porte, com nomes que posso abrir e outros que não. Entre os que posso citar estão Suzano, LDC e Cultura Inglesa. Há ainda grandes redes varejistas e bancos cujo nome fica em confidencialidade, e você vai preferir que seja assim quando for a sua vez."},
+  {b:"Trocar o nome pelo mecanismo", t:"Mais útil que o nome é o que a operação tinha antes e o que mudou: quantas unidades, quantas fontes de informação, o que passou a ser comparável e em quanto tempo. É essa parte que se parece com o seu caso."},
+  {b:"Pedido", t:"E o caso mais convincente é o seu. Me manda as faturas de três unidades e, na próxima conversa, eu te mostro a sua operação dentro da plataforma."}],
+ erro:"Citar nome que não está autorizado. Para a conta cujo nome não pode ser aberto, descreva o perfil (grande rede varejista, banco de varejo, rede de ensino, indústria multiplanta) e nunca o nome. Na dúvida sobre um nome específico, pergunte antes da reunião em vez de decidir na hora.",
+ quiz:{
+  pergunta:"O prospect pede referências. Como você usa os nomes?",
+  opts:[
+   {t:"Cito qualquer cliente da carteira, já que a relação existe.", ok:false, fb:"Nem todo contrato permite. Nome citado sem autorização é problema jurídico e queima a confiança do cliente que você citou, que é justamente quem te daria a referência."},
+   {t:"Cito os nomes autorizados e, para os demais, descrevo o perfil sem nomear: grande rede varejista, banco, rede de ensino.", ok:true, fb:"É a regra. A robustez vem do porte das operações e do que mudou dentro delas; o nome é um detalhe que só entra quando está liberado."},
+   {t:"Não cito ninguém e ofereço apenas a demonstração com o dado dele.", ok:false, fb:"Joga fora a prova social que existe e está liberada. A demonstração com o dado dele é o fecho do argumento, não o substituto dele."}]}},
+
+{id:"administradora-ja-faz", obj:"A administradora (ou o property manager) já faz isso.", tags:["Real Estate"],
+ beneath:"Quase sempre é verdade: a administradora faz o trabalho. O que não existe é a visualização. A informação fica na casa dela, muitas vezes fora de qualquer base de dados, e chega ao fundo por solicitação, no formato dela e no tempo dela. A objeção não é sobre execução, é sobre acesso.",
+ moves:[
+  {b:"Concordar sem recuar", t:"A administradora faz, e não é ela que a gente quer substituir. A pergunta é outra: hoje, para ver o número de um ativo, você olha ou você pede?"},
+  {b:"Mostrar o que falta", t:"O trabalho acontece, mas a informação não fica numa base que seja sua. Enquanto ela só existir do lado da administradora, cada consulta vira pedido e cada fechamento depende do tempo de outra pessoa. A plataforma é sua, com o controle financeiro incluído, e é abastecida também pelas administradoras, integrando os sistemas que já estão rodando."},
+  {b:"Pedido", t:"Me manda os relatórios de dois ativos com administradoras diferentes, do mesmo mês. Eu te mostro o que dá e o que não dá para comparar hoje, e como ficaria com tudo na mesma base."}],
+ erro:"Criticar a administradora ou posicionar a plataforma como substituta dela. Ela costuma ser parceira do fundo e, na prática, é uma das fontes que vão abastecer a base. A posição é complementar: integrar aos sistemas que já existem, não trocar de fornecedor.",
+ quiz:{
+  pergunta:"O gestor do fundo diz que a administradora já cuida de utilities. Qual é o melhor reposicionamento?",
+  opts:[
+   {t:"Mostrar que administradoras costumam ter processos frágeis e cometer erros.", ok:false, fb:"Ataca um parceiro do cliente, e muitas vezes um parceiro seu: é a administradora que vai abastecer a base. Além disso não responde a pergunta do gestor."},
+   {t:"Perguntar se hoje, para ver o número de um ativo, ele olha ou ele pede.", ok:true, fb:"Separa execução de acesso numa frase só, sem atacar ninguém. O trabalho existe; o que não existe é a informação numa base que seja do fundo, disponível a qualquer hora."},
+   {t:"Propor apresentar a plataforma diretamente à administradora.", ok:false, fb:"Perde o cliente que está na sua frente. Quem sente a dor de portfólio é a gestora, e a venda para a administradora é outra, com outro comprador."}]}}
+];
+
+
+/* ---------- 5. Funil ---------- */
+const FUNIL = [
+{n:"1", t:"Conta priorizada", d:"PIC validado pelo Índice de Aderência, pessoa-alvo identificada pelo nome e hipótese de dor formulada antes do primeiro contato.", exit:"Score calculado e hipótese escrita em uma frase."},
+{n:"2", t:"Conexão", d:"O prospect aceitou conversar porque a hipótese fez sentido para a situação dele, não porque foi educado.", exit:"Reunião agendada com data, e o motivo declarado pelo cliente registrado."},
+{n:"3", t:"Diagnóstico", d:"Dor, impacto, gatilho, responsável e áreas envolvidas identificados. O cliente nomeou uma consequência concreta.", exit:"Impacto quantificado (tempo, custo, risco) e patrocinador nomeado."},
+{n:"4", t:"Desenho da solução e demonstração", d:"Escopo inicial alinhado e demonstração construída sobre os fluxos que o discovery revelou, não sobre o catálogo.", exit:"Dados do cliente recebidos, escopo confirmado por escrito e segunda área presente na demonstração."},
+{n:"5", t:"Consenso e proposta", d:"Riscos mapeados, áreas relevantes envolvidas, requisitos de TI e jurídico conhecidos, proposta conectada a um escopo compreendido.", exit:"Proposta enviada com escopo validado e data de decisão combinada com o cliente."},
+{n:"6", t:"Negociação e fechamento", d:"Contrapartidas definidas, condições contratuais alinhadas, plano de passagem para implantação acordado.", exit:"Proposta assinada devolvida para comercial.gestao@luxenergia.com.br e reunião de kickoff marcada."}
+];
+
+/* ---------- 6. Glossário ---------- */
+const GLOSS = [
+{t:"PIC",d:"Perfil Ideal de Cliente. O conjunto de características que faz uma conta ter alta chance de comprar e de ter sucesso depois."},
+{t:"Índice de Aderência",d:"A pontuação de qualificação da LUXSolutions: sete dimensões, de 0 a 3 pontos cada, num total de 21, que classifica a conta em A, B, C ou D."},
+{t:"Discovery",d:"Os primeiros vinte minutos da reunião, de conversa e não de questionário. É onde se descobre o custo operacional, quem sente a dor, quem decide e qual é o relógio do cliente."},
+{t:"OPEX",d:"Custo operacional recorrente. Numa operação multiponto, boa parte dele existe só para produzir informação: coletar fatura, conferir consumo, montar planilha, refazer relatório."},
+{t:"Patrocinador interno",d:"Quem sente a dor, vê valor na mudança e defende a proposta quando você não está na sala."},
+{t:"Viabilizador",d:"Área que pode facilitar, validar ou bloquear a decisão: TI, Compras, Jurídico, ESG, Segurança da Informação."},
+{t:"Venda Desafiadora",d:"Abordagem em que o vendedor ensina algo novo, adapta a mensagem ao interlocutor e assume o controle do próximo passo, em vez de apenas perguntar o que o cliente quer."},
+{t:"UC",d:"Unidade Consumidora. Cada ponto de entrega de energia com medição e fatura próprias. É a unidade de contagem mais usada na qualificação."},
+{t:"ACL",d:"Ambiente de Contratação Livre, o mercado livre de energia, onde o consumidor negocia preço e fornecedor em vez de pagar a tarifa regulada."},
+{t:"Mercado cativo",d:"O ambiente regulado: o cliente compra da distribuidora local pela tarifa homologada. Migrar para o ACL exige denunciar esse contrato dentro de um prazo."},
+{t:"CCEE",d:"Câmara de Comercialização de Energia Elétrica. Registra contratos, mede, contabiliza e liquida as diferenças do mercado livre. Gera obrigações e prazos recorrentes para quem está no ACL."},
+{t:"Demanda contratada",d:"A potência que o cliente contrata junto à distribuidora. Ultrapassar gera cobrança adicional, e em operação multiponto isso costuma ser descoberto tarde."},
+{t:"Titularidade",d:"Em nome de quem a unidade consumidora está registrada. Em redes com abertura e fechamento de pontos, titularidade desatualizada gera fatura de loja que já fechou."},
+{t:"Baseline",d:"O padrão de consumo de referência de uma unidade ou período. Sem baseline não há desvio visível, só total."},
+{t:"Rateio",d:"Divisão da conta de utilities entre lojistas, condôminos ou clientes. Sem base auditável, vira disputa comercial."},
+{t:"GD",d:"Geração Distribuída. Geração próxima ao consumo, normalmente solar, que gera créditos de compensação na fatura."},
+{t:"I-REC",d:"Certificado internacional que comprova que determinada quantidade de energia foi gerada por fonte renovável. É o lastro documental de metas de energia limpa."},
+{t:"LEED",d:"Certificação internacional de desempenho ambiental de edifícios, usada por fundos e corporações para atestar qualidade do ativo."},
+{t:"BMS",d:"Building Management System. Sistema de automação predial que controla climatização, iluminação e equipamentos, e é fonte de dado de consumo."},
+{t:"Telemetria",d:"Medição automática e contínua enviada à distância. Aumenta a granularidade, mas não é pré-requisito: dá para começar por faturas, portais e contratos."},
+{t:"FII",d:"Fundo de Investimento Imobiliário. No contexto do playbook, o comprador típico da entrada por Real Estate."},
+{t:"NOI",d:"Net Operating Income. Receita operacional líquida de um ativo imobiliário. Reduzir despesa de utilities aumenta NOI diretamente."},
+{t:"Cotista",d:"Investidor do fundo. É quem cobra o gestor por relatório comparável e por explicação sobre o desempenho dos ativos."},
+{t:"Administradora",d:"Empresa que executa a rotina do condomínio ou do ativo. Executa bem, mas a informação costuma ficar na casa dela, o que é a origem da objeção mais comum em Real Estate."},
+{t:"Property manager",d:"Quem gere o ativo imobiliário no dia a dia em nome do proprietário ou do fundo. Mesmo caso da administradora: executa, mas não entrega visualização."},
+{t:"Acreditação",d:"Certificação de qualidade hospitalar, como ONA e JCI. Traz exigência de indicadores e de evidência, e costuma ser gatilho em redes de saúde."},
+{t:"SLA",d:"Service Level Agreement. Nível de serviço acordado: prazo de resposta, prazo de entrega, disponibilidade."}
+];
+
+
+/* ---------- 7. Portfólio e tradução ---------- */
+const PORTFOLIO = [
+{fam:"Energia", nome:"Gestão de ACL", d:"Unidades consumidoras, contratos, consumo, demanda, faturas, obrigações da CCEE, previsões, relatórios e inteligência de mercado."},
+{fam:"Energia", nome:"Gestão de GD", d:"Rede de geradores, processo competitivo de propostas, créditos, compensação, economia e auditoria de performance."},
+{fam:"Utilities", nome:"Utilities & Facilities", d:"Energia, água, gás e resíduos na mesma visão operacional e financeira, com metas, alertas, comparação de desempenho e visão de portfólio."},
+{fam:"Ambiental", nome:"Performance Ambiental", d:"Emissões, metas, energia renovável, I-REC, indicadores ambientais, evidências e certificação LEED."},
+{fam:"Real Estate", nome:"LuxCondo Portfólio", d:"Fundos, ativos, contratos, financeiro, utilities, indicadores, documentos, pendências e relatórios executivos."},
+{fam:"Real Estate", nome:"LuxCondo Síndicos", d:"Financeiro, manutenção, fornecedores, contratos, chamados, utilities e documentos para a rotina condominial."},
+{fam:"Real Estate", nome:"LuxCondo Administradoras", d:"Carteira, padronização, equipes, fluxos, níveis de serviço, documentos, contratos e governança em escala."},
+{fam:"Transversal", nome:"Capacidades transversais", d:"Integrações, leitura por IA, alertas, relatórios, auditoria, previsões, comparações, perfis de acesso e histórico, conforme o módulo e o escopo contratado."}
+];
+
+const TRADUCAO = [
+{f:"Captura e leitura de dados", v:"Reduzir coleta manual, padronizar informações e acelerar o fechamento do mês.",
+ nao:"Temos leitura de faturas por IA.", sim:"A plataforma reduz o trabalho de capturar e organizar as informações das faturas e deixa a equipe focada nas exceções que realmente precisam de análise."},
+{f:"Alertas, prazos e responsáveis", v:"Reduzir risco operacional e depender menos de memória, planilha e caixa de e-mail.",
+ nao:"Tem sistema de alertas configurável.", sim:"Hoje o prazo mora na cabeça de alguém. A plataforma coloca prazo, responsável e evidência no mesmo lugar, então deixar passar vira exceção visível em vez de descoberta tardia."},
+{f:"Comparação de desempenho", v:"Identificar unidades ou ativos fora do padrão e priorizar ação com critério.",
+ nao:"Fazemos benchmark entre unidades.", sim:"Você passa a saber quais três unidades estão fora do padrão neste mês e por quê, em vez de olhar o total da rede e não conseguir agir."},
+{f:"Relatórios e visão executiva", v:"Melhorar governança, comunicação com a diretoria e velocidade de decisão.",
+ nao:"Tem dashboards executivos.", sim:"Quando a diretoria pede o número, ele já existe, com origem e data. Ninguém precisa parar dois dias para montar a apresentação."},
+{f:"IA aplicada", v:"Acelerar leitura, classificação, análise e identificação de padrões, com validação humana quando a decisão é crítica.",
+ nao:"Usamos inteligência artificial.", sim:"A parte repetitiva de ler e classificar documento é feita pela máquina, e a decisão que tem consequência continua passando por uma pessoa."},
+{f:"Especialistas", v:"Transformar dado em contexto, recomendação, acompanhamento e execução.",
+ nao:"Temos um time de especialistas.", sim:"A plataforma mostra o desvio. Quem te diz o que fazer com ele, e acompanha até resolver, é um gestor que entende de energia e utilities, não um chamado de suporte."}
+];
+
+const QUALIDADES = [
+{n:"Controle",d:"Uma fonte única para informações que hoje vivem espalhadas."},
+{n:"Eficiência",d:"Menos coleta manual, menos retrabalho e menos dependência de planilha."},
+{n:"Economia",d:"Mais capacidade de identificar desvios, oportunidades e perdas."},
+{n:"Inteligência",d:"Comparações, previsões, análises e recomendações para apoiar a decisão."},
+{n:"Governança",d:"Prazos, responsáveis, histórico, evidências e rastreabilidade."},
+{n:"Especialistas",d:"Tecnologia acompanhada por quem entende energia, utilities e gestão de ativos."}
+];
+
+/* ---------- 10. Checklists ---------- */
+const CHK_ANTES = ["Qual é a hipótese de dor para essa conta, escrita em uma frase?","A entrada é venda independente, integrada à gestão, Real Estate ou expansão?","Score do Índice de Aderência calculado e tier definido","Quais 3 perguntas de diagnóstico são essenciais nesta conversa?","Quais 3 fluxos fazem sentido na demonstração?","Quem mais precisa entrar na próxima conversa, pelo nome?","Qual é o relógio do cliente: que data no mundo dele faz esperar custar dinheiro?","Qual é o próximo passo que eu vou pedir, com data?"];
+const CHK_DEPOIS = ["Hipótese validada: qual problema realmente importa para o cliente?","Impacto: consequência em tempo, custo, risco ou qualidade da decisão, com número","Próximo passo: data, responsável, áreas envolvidas e critério para avançar","Dados solicitados e prazo combinado para recebê-los","Registro no CRM feito no mesmo dia","Sinais de alerta identificados na conversa"];
+const ALERTAS = ["Nenhum patrocinador interno identificado pelo nome","Pedido de proposta antes de qualquer diagnóstico","Conversa girando exclusivamente em preço","Uma única pessoa envolvida do lado do cliente","Nenhum custo claro para manter o cenário atual","Nenhuma data no mundo do cliente que force a decisão"];
+
+/* ---------- 12. Quiz de certificação ---------- */
+const CERT = [
+{q:"Como você apresenta a LUXSolutions numa primeira conversa?",
+ o:[{t:"Como um painel de indicadores que centraliza os dados da operação",ok:false},{t:"Como uma camada de gestão que conecta dados, processos, especialistas e decisões",ok:true},{t:"Como um software de visualização com relatórios personalizáveis",ok:false}],
+ fb:"Painel e software de visualização são categorias de commodity: nelas a comparação vira preço, e o cliente conclui que já tem algo parecido. A camada de gestão é o posicionamento da casa."},
+{q:"Qual destas frases entrega valor em vez de funcionalidade?",
+ o:[{t:"Temos leitura de faturas por inteligência artificial.",ok:false},{t:"A plataforma reduz o trabalho de capturar e organizar as informações das faturas e deixa a equipe focada nas exceções que precisam de análise.",ok:true},{t:"Nossa IA é treinada com um grande volume de faturas do setor elétrico.",ok:false}],
+ fb:"O teste dos cinco segundos: o que muda na segunda-feira de quem está ouvindo? Descrever a máquina não responde isso; descrever o trabalho que deixa de existir, sim."},
+{q:"Um cliente que já contrata a gestão, com 4 UCs quer entender a plataforma. Como tratar?",
+ o:[{t:"Fora do PIC: menos de 8 UCs",ok:false},{t:"Plataforma integrada ao serviço de gestão, sem mínimo rígido, e a abordagem sai alinhada com o gestor de conta",ok:true},{t:"Vender como conta nova, independente do gestor de conta",ok:false}],
+ fb:"O filtro de 8+ UCs vale para prospecção ativa da venda independente. Na entrada integrada não há mínimo rígido, e atropelar o gestor de conta custa mais do que a venda vale."},
+{q:"Para prospecção ativa da plataforma, qual é o filtro inicial de escala recomendado?",
+ o:[{t:"3 ou mais UCs",ok:false},{t:"8 ou mais UCs, com cenário ideal a partir de 20 UCs ou 30 faturas por mês",ok:true},{t:"50 ou mais UCs",ok:false}],
+ fb:"8+ UCs é o filtro inicial da venda independente. Mas o filtro só separa: quem define prioridade é o Índice de Aderência."},
+{q:"Uma conta soma 18 pontos no Índice de Aderência, mas ninguém do lado do cliente sente a dor pessoalmente. Como tratar?",
+ o:[{t:"Tier A: 18 pontos é alta aderência, siga com ciclo completo",ok:false},{t:"Ir atrás do patrocinador antes de investir em demonstração",ok:true},{t:"Descartar a conta",ok:false}],
+ fb:"Sem patrocinador nomeado, a conta não avança por mais alta que seja a pontuação. É o primeiro dos sinais de alerta do módulo 07."},
+{q:"Onde o comercial deve procurar o dinheiro numa conta nova?",
+ o:[{t:"Na tarifa de energia que o cliente paga hoje",ok:false},{t:"No custo operacional recorrente que existe só para produzir informação, e no que o cliente deixa de ganhar ou de evitar por não enxergar o portfólio inteiro",ok:true},{t:"No orçamento de tecnologia disponível para o ano",ok:false}],
+ fb:"É a pergunta que monta a hipótese de qualquer conta. A conta fecha por quatro caminhos: OPEX deduzido em tempo, equipe que não precisa crescer, receita gerada e risco mitigado. O número vai em horas, pessoas ou reais, nunca em porcentagem."},
+{q:"A reunião padrão tem uma hora. Como ela se divide e o que define as telas da apresentação?",
+ o:[{t:"20 minutos de discovery, 30 de apresentação e 10 de próximos passos, com as telas escolhidas pelo que apareceu nos vinte primeiros minutos",ok:true},{t:"30 de apresentação, 20 de discovery e 10 de dúvidas, com o roteiro de telas definido antes da reunião",ok:false},{t:"50 minutos de apresentação e 10 de dúvidas, para cobrir todos os sistemas",ok:false}],
+ fb:"O discovery vem primeiro justamente para escolher o que mostrar. Entrar com o roteiro fechado é apresentar catálogo, e tentar cobrir todos os sistemas numa reunião é a forma mais rápida de perder o decisor."},
+{q:"O cliente diz que o Excel funciona. Qual é o movimento certo?",
+ o:[{t:"Mostrar os riscos de depender de planilha",ok:false},{t:"Concordar e perguntar em qual parte ele começa a dar mais trabalho: captura, prazo, conciliação, comparação, auditoria ou dependência de uma pessoa",ok:true},{t:"Comparar as funcionalidades da plataforma com o Excel",ok:false}],
+ fb:"A planilha é obra de alguém que está na sala. Concordar preserva a relação; a pergunta com opções concretas faz o cliente localizar o próprio limite."},
+{q:"O prospect pede referências. O que você pode citar?",
+ o:[{t:"Qualquer cliente da carteira, já que a relação existe",ok:false},{t:"Os nomes autorizados e, para os demais, o perfil da operação sem nomear",ok:true},{t:"Nenhum nome, só a demonstração com o dado do próprio prospect",ok:false}],
+ fb:"Nomes autorizados podem e devem ser usados: eles são a prova de robustez. Para a conta que não pode ser aberta, descreva o perfil (grande rede varejista, banco, rede de ensino). Nome sem autorização é problema jurídico."},
+{q:"A TI pergunta onde os dados ficam hospedados e você não sabe. O que fazer?",
+ o:[{t:"Dar a resposta mais provável",ok:false},{t:"Dizer que traz por escrito, com prazo, e escalar internamente",ok:true},{t:"Dizer que é informação confidencial",ok:false}],
+ fb:"Resposta técnica errada é irreversível com Segurança da Informação. Prazo declarado vira próximo passo datado, que é o que você queria."},
+{q:"Uma oportunidade teve uma ótima reunião, todo mundo elogiou e não ficou nada marcado. Em que etapa do funil ela está?",
+ o:[{t:"Avançou para Consenso e proposta",ok:false},{t:"Não avançou. Sem próximo passo datado, responsável nomeado e entrega combinada, a etapa não fechou.",ok:true},{t:"Avançou para Negociação",ok:false}],
+ fb:"Reunião positiva não é evidência de avanço. Cada etapa fecha com evidência e próximo passo verificável."}
+];
+
+
+</script>
+<script>
+/* ===================== helpers ===================== */
+const $ = (s,r)=> (r||document).querySelector(s);
+const $$ = (s,r)=> Array.from((r||document).querySelectorAll(s));
+const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const store = {
+  get(k,d){ try{ const v=localStorage.getItem('luxpb7:'+k); return v?JSON.parse(v):d; }catch(e){ return d; } },
+  set(k,v){ try{ localStorage.setItem('luxpb7:'+k, JSON.stringify(v)); }catch(e){} }
+};
+let done = store.get('done',{});
+const sec=(t,s,i)=>`<section class="sec"><h2>${t}</h2>${s?`<p class="sub">${s}</p>`:''}${i}</section>`;
+const head=(n,e,t,l)=>`<header><div class="eyebrow">${n} · ${e}</div><h1 class="h-mod">${t}</h1><p class="lede">${l}</p></header>`;
+const prose=a=>`<div class="prose">${a.map(p=>`<p>${p}</p>`).join('')}</div>`;
+const note=(t,k)=>`<div class="note ${k||''}">${t}</div>`;
+const pend=t=>`<div class="pend"><b>Pendência interna</b>${t}</div>`;
+const tick=(a,neg)=>`<ul class="tick ${neg?'no':''}">${a.map(i=>`<li><span>${i}</span></li>`).join('')}</ul>`;
+const steps=a=>`<div class="funnel">${a.map(([t,d],i)=>`<div class="fstep"><span class="num">${String(i+1).padStart(2,'0')}</span><div><h4>${t}</h4><p>${d}</p></div></div>`).join('')}</div>`;
+
+const embaralhar=a=>{const r=a.slice();for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]];}return r;};
+const OBJSHUF={};
+function marcarCerta(el){ el.classList.add('right'); if(!el.querySelector('.okflag')) el.insertAdjacentHTML('beforeend','<span class="okflag">resposta certa</span>'); }
+const MODULES=[];
+const M=(id,num,nome,keys,render,after)=>MODULES.push({id,num,nome,keys,render,after});
+
+/* ===================== 01 ===================== */
+M('plataforma','01','O que é a LUXSolutions','plataforma valor qualidades posicionamento traducao funcionalidade',()=>`
+${head('01','A plataforma','O que é a LUXSolutions','Uma camada de gestão que centraliza dados, automatiza etapas manuais e transforma operações complexas em decisão. Você não vende software de visualização: vende o fim do trabalho manual de juntar informação que hoje mora em lugares diferentes.')}
+${sec('O problema e a entrega','',
+`<div class="grid g2">
+ <div class="card"><div class="eyebrow" style="color:var(--ink-3);margin-bottom:8px">Como é hoje na operação do cliente</div>${prose(['Operações com muitas unidades, ativos, faturas, contratos e fontes de informação dependem de planilhas, portais, documentos e sistemas que não conversam. Isso aumenta retrabalho, reduz rastreabilidade e torna quase impossível comparar uma unidade com outra.'])}</div>
+ <div class="card" style="border-top:3px solid var(--lime)"><div class="eyebrow" style="margin-bottom:8px">O que a LUXSolutions entrega</div>${prose(['Uma camada de gestão que centraliza e organiza informação, automatiza etapas manuais e cria indicadores, alertas, relatórios e visão de portfólio para apoiar decisões com mais contexto.'])}</div>
+</div>`)}
+${sec('As seis qualidades que você precisa saber apresentar','Não são funcionalidades. São as consequências que o cliente compra.',
+`<div class="grid g3">${QUALIDADES.map((q,i)=>`<div class="card"><div class="eyebrow" style="margin-bottom:6px">${String(i+1).padStart(2,'0')}</div><h3 style="font-size:15px;font-weight:700;margin-bottom:5px">${q.n}</h3><p style="font-size:13.5px;color:var(--ink-2);line-height:1.5">${q.d}</p></div>`).join('')}</div>
+<div style="margin-top:14px">${note('<b>Posicionamento.</b> Apresente a LUXSolutions como uma camada de gestão que conecta dados, processos, especialistas e decisões. Evite “painel de indicadores” e “software de visualização”: essas duas expressões colocam a plataforma numa categoria de commodity, onde a comparação é só por preço.')}</div>`)}
+${sec('Da funcionalidade ao valor','O cliente não compra uma lista de recursos. Abra cada linha para ver a frase que não funciona e a que funciona.',
+`<div class="objlist">${TRADUCAO.map((t,i)=>`
+<div class="objcard" id="tr-${i}">
+  <button type="button" onclick="document.getElementById('tr-${i}').classList.toggle('open')">
+    <span style="flex:1"><b style="font-size:14.5px;font-weight:700">${t.f}</b><br><span style="font-size:13px;color:var(--ink-2)">${t.v}</span></span><span class="caret">›</span>
+  </button>
+  <div class="objbody"><div class="grid g2">
+    <div class="card" style="background:var(--surface-3);border-color:transparent"><div class="eyebrow" style="color:var(--ink-3)">Não diga</div><p style="font-size:14.5px;font-weight:500">“${t.nao}”</p></div>
+    <div class="card" style="background:var(--lime-soft);border-color:transparent"><div class="eyebrow">Diga</div><p style="font-size:14.5px;font-weight:500">“${t.sim}”</p></div>
+  </div></div>
+</div>`).join('')}</div>
+<div style="margin-top:14px">${note('<b>O teste dos cinco segundos.</b> Depois de dizer a frase, pergunte a si mesmo: o que muda na segunda-feira de quem está me ouvindo? Se não houver resposta, você ainda está descrevendo o produto. Se houver, você acabou de dar ao cliente o argumento que ele vai repetir quando você não estiver na sala.')}</div>`)}
+`);
+
+/* ===================== 02 ===================== */
+M('escopo','02','Escopo e formas de entrada','sistemas modulos escopo entrada energia utilities real estate luxcondo',()=>`
+${head('02','Escopo','Os sistemas e por onde a venda entra','Cada sistema resolve uma dor específica, mas todos seguem a mesma lógica: capturar, organizar, analisar e transformar dados em decisão. O que muda de um para outro é quem sente a dor e quem assina.')}
+${sec('Os sistemas','',
+`<div class="grid g2">${PORTFOLIO.map(p=>`<div class="card"><div class="row" style="justify-content:space-between;margin-bottom:7px"><h3 style="font-size:15px;font-weight:700">${p.nome}</h3><span class="chip">${p.fam}</span></div><p style="font-size:13.5px;color:var(--ink-2);line-height:1.55">${p.d}</p></div>`).join('')}</div>`)}
+${sec('Quatro formas de entrada','A mesma plataforma entra por caminhos diferentes. Escolher a forma certa evita qualificação errada e define a mensagem.',
+`<div class="grid g2">
+${[['Venda independente','Prospecção ativa para operações com escala, controle central e grande volume de informação. O filtro de escala e o critério de prioridade estão no módulo 03.'],
+   ['Integrada ao serviço de gestão','Cliente que já contrata a gestão de energia usa o sistema como camada de transparência e relatório, mesmo com poucas unidades. Aqui não existe mínimo rígido, e a abordagem sai alinhada com o gestor de conta.'],
+   ['Entrada por Real Estate','O gatilho é governança em escala: múltiplos ativos, administradoras, contratos, documentos, fluxos e necessidade de relatório executivo para comitê ou cotista.'],
+   ['Venda cruzada e expansão','De Energia para Utilities, Performance Ambiental e Real Estate, e o caminho inverso. A expansão parte de uma dor já identificada, nunca de um catálogo.']]
+  .map(([t,d],i)=>`<div class="card"><div class="eyebrow" style="margin-bottom:6px">Entrada ${i+1}</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px">${t}</h3><p style="font-size:13.5px;color:var(--ink-2);line-height:1.55">${d}</p></div>`).join('')}
+</div>`)}
+`);
+
+/* ===================== 03 ===================== */
+M('qualificacao','03','Qualificação','pic score aderencia tier qualificar filtro ucs',()=>`
+${head('03','Qualificação','Índice de Aderência','Sete dimensões, de zero a três pontos cada, num total de 21. A pontuação decide quem merece um ciclo de venda completo e quem segue para nutrição, oferta integrada ou baixa prioridade. Pontue durante a conversa, não depois: o que você não perguntou aparece como dimensão em branco.')}
+${sec('Filtro de entrada','Antes da pontuação, o corte grosso.',
+note('Para <b>prospecção ativa</b>, use <b>8 ou mais unidades</b> como filtro inicial; o cenário ideal costuma ter 20+ unidades ou 30+ faturas por mês. Na entrada integrada ao serviço de gestão não há mínimo. O filtro decide se você liga. O Índice decide quanto esforço a conta merece depois que você ligou.'))}
+${sec('Calculadora','Selecione o nível de cada dimensão. O resultado atualiza sozinho.',
+`<div class="scorer">
+  <div class="dims">${DIMS.map(d=>`
+    <div class="dim"><h4>${d.nome}</h4><div class="hint">${d.hint}</div>
+      <div class="opts">${d.opts.map(o=>`<button type="button" class="opt" data-dim="${d.id}" data-p="${o.p}" aria-pressed="false"><span class="pt">${o.p}</span><span>${o.t}</span></button>`).join('')}</div>
+    </div>`).join('')}
+  </div>
+  <aside class="panel">
+    <div><div class="eyebrow" style="margin-bottom:6px">Pontuação</div>
+      <div class="gauge"><b id="sc-num">0</b><span>/ 21</span></div>
+      <div class="meter" style="margin-top:10px"><i id="sc-meter" style="width:0%;background:var(--tD)"></i></div></div>
+    <div class="tierbox" id="sc-tier"></div>
+    <div><div class="eyebrow" style="margin-bottom:6px">Próximo passo</div><p id="sc-passo" style="font-size:12.5px;color:var(--ink-2);line-height:1.5"></p></div>
+    <div id="sc-falta" style="font-size:11.5px;color:var(--ink-3);font-weight:600"></div>
+    <button class="btn sec2" type="button" id="sc-reset">Limpar</button>
+  </aside>
+</div>`)}
+${sec('Faixas','',
+`<div class="tablewrap"><table><thead><tr><th>Tier</th><th class="faixa">Faixa</th><th>O que fazer</th></tr></thead><tbody>
+${TIERS.map(t=>`<tr><td><span class="chip ${t.cor}">${t.id} · ${t.nome}</span></td><td class="faixa"><b>${t.min} a ${t.max}</b></td><td>${t.acao}</td></tr>`).join('')}
+</tbody></table></div>`)}
+`, ()=>{
+  const state={};
+  function calc(){
+    const total=Object.values(state).reduce((a,b)=>a+b,0);
+    const t=TIERS[TIERS.findIndex(x=>total>=x.min&&total<=x.max)];
+    $('#sc-num').textContent=total;
+    const m=$('#sc-meter'); m.style.width=(total/21*100)+'%'; m.style.background=`var(--t${t.id})`;
+    const box=$('#sc-tier'); box.style.background=`var(--t${t.id}-soft)`;
+    box.innerHTML=`<div class="t" style="color:var(--t${t.id})"><i>${t.id}</i> ${t.nome}</div><p style="color:var(--ink-2)">${t.acao}</p>`;
+    $('#sc-passo').textContent=t.passo;
+    $('#sc-falta').innerHTML = Object.keys(state).length<DIMS.length ? `${DIMS.length-Object.keys(state).length} dimensão(ões) sem resposta · valem 0` : '';
+  }
+  $$('.opt').forEach(b=>b.addEventListener('click',()=>{
+    const d=b.dataset.dim;
+    $$(`.opt[data-dim="${d}"]`).forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true'); state[d]=+b.dataset.p; calc();
+  }));
+  $('#sc-reset').addEventListener('click',()=>{ Object.keys(state).forEach(k=>delete state[k]); $$('.opt').forEach(x=>x.setAttribute('aria-pressed','false')); calc(); });
+  calc();
+});
+
+/* ===================== 04 ===================== */
+M('cenarios','04','Cenários de cliente','segmento saude varejo banco educacao fii administradora sindico industria',()=>`
+${head('04','Cenários','Dossiê por segmento','Onze perfis com o gatilho típico, o relógio do cliente, as perguntas de diagnóstico calibradas e as telas que fazem sentido na demonstração. Escolha o segmento antes da reunião e leve isso na cabeça, não na tela.')}
+<div class="sec">
+  <div class="segbar" id="segbar">${SEGMENTOS.map((s,i)=>`<button type="button" class="segbtn" data-seg="${s.id}" aria-pressed="${i===0}">${s.nome}</button>`).join('')}</div>
+  <div id="dossier"></div>
+</div>
+${sec('Onde está o dinheiro','Vale para os onze segmentos e para qualquer conta que não esteja na lista.',
+`${prose(['Comece pelo <strong>custo operacional recorrente</strong>. Toda operação multiponto gasta OPEX só para produzir informação: horas de gente juntando fatura, conferindo consumo, montando planilha, refazendo relatório que veio errado, cobrando documento de fornecedor. Esse custo não aparece na conta de energia. Aparece na folha e no calendário, e por isso quase ninguém soma.','A plataforma entra por uma troca simples: <strong>no lugar do trabalho manual, não em cima dele</strong>. Não é mais uma ferramenta somada à rotina, é a rotina saindo da planilha. A partir daí a conta fecha por quatro caminhos, e o melhor argumento é quase sempre o que o seu interlocutor é cobrado para entregar.'])}
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(330px,1fr));margin-top:16px">
+${[['OPEX deduzido em tempo','As horas que hoje somem na coleta e na conferência voltam para análise, negociação e o que de fato gera resultado. É o argumento de quem toca a operação.'],
+   ['Equipe que não precisa crescer','A operação dobra de unidades e o mesmo time absorve, em vez de contratar mais alguém só para consolidar. É o argumento de quem responde pelo orçamento.'],
+   ['Receita gerada','A visão de portfólio mostra o que estava invisível: ativo fora do padrão, unidade com espaço de renegociação, contrato vencendo, rateio cobrado a menos, crédito não aproveitado. Decisão que não acontecia porque ninguém enxergava o conjunto. É o argumento de quem responde por resultado.'],
+   ['Risco operacional mitigado','Informação sob controle é prazo com responsável, evidência com origem e desvio detectado cedo. Multa, autuação, cobrança indevida e decisão tomada com dado errado deixam de ser descoberta tardia. É o argumento de quem responde por governança, auditoria ou ESG.']]
+ .map(([t,d],i)=>`<div class="card" style="border-top:3px solid var(--lime)"><div class="eyebrow" style="margin-bottom:6px">${String(i+1).padStart(2,'0')}</div><h3 style="font-size:15px;font-weight:700;margin-bottom:6px">${t}</h3><p style="font-size:13.5px;color:var(--ink-2);line-height:1.55">${d}</p></div>`).join('')}
+</div>
+<div style="margin-top:14px">${note('<b>A pergunta que monta a hipótese de qualquer conta:</b> quanto do custo operacional dessa empresa existe hoje só para produzir informação, e o que ela deixa de ganhar ou de evitar por não enxergar o portfólio inteiro? Leve o número em horas, em pessoas ou em reais, não em porcentagem. Se a resposta não levar de volta a uma força real da plataforma, não use: ensinar um problema que você não resolve é entregar o cliente para outro.')}</div>`)}
+`, ()=>{
+  function draw(id){
+    const s=SEGMENTOS.find(x=>x.id===id)||SEGMENTOS[0];
+    $('#dossier').innerHTML=`
+    <div class="dossier">
+      <div class="dosshead">
+        <div><h3>${s.nome}</h3><p style="font-size:13.5px;color:var(--ink-2);margin-top:5px;line-height:1.55">${s.perfil}</p></div>
+        <div class="row" style="gap:6px"><span class="chip ${s.tier.toLowerCase()}">Tier típico ${s.tier}</span><span class="chip">${s.entrada}</span></div>
+      </div>
+      <div class="grid g2">
+        <div class="card"><div class="eyebrow" style="margin-bottom:9px">Por que é PIC</div>${tick(s.porque)}</div>
+        <div class="card">
+          <div class="kv" style="margin-bottom:13px"><span class="k">Quando não é PIC</span><span class="v">${s.naoE}</span></div>
+          <div class="kv" style="margin-bottom:13px"><span class="k">Gatilho típico</span><span class="v">${s.gatilho}</span></div>
+          <div class="kv"><span class="k">O relógio do cliente</span><span class="v">${s.relogio}</span></div>
+        </div>
+      </div>
+      <div class="grid g2">
+        <div class="card"><div class="eyebrow" style="margin-bottom:9px">Três perguntas de diagnóstico</div>${tick(s.spin)}</div>
+        <div class="card"><div class="eyebrow" style="margin-bottom:9px">Três telas na demonstração</div>${tick(s.demo)}</div>
+      </div>
+      <div class="card"><div class="eyebrow" style="margin-bottom:7px">Quem decide, quem patrocina, quem pode barrar</div><p style="font-size:13.5px;color:var(--ink-2);line-height:1.55">${s.pessoas}</p></div>
+      ${s.refs?note(`<b>Perfis de referência.</b> ${s.refs}`):''}
+    </div>`;
+  }
+  $$('#segbar .segbtn').forEach(b=>b.addEventListener('click',()=>{
+    $$('#segbar .segbtn').forEach(x=>x.setAttribute('aria-pressed','false'));
+    b.setAttribute('aria-pressed','true'); draw(b.dataset.seg);
+  }));
+  draw(SEGMENTOS[0].id);
+});
+
+/* ===================== 05 ===================== */
+M('demonstracao','05','Demonstração','challenger demo telas ensinar adaptar controle',()=>`
+${head('05','Demonstração','Venda Desafiadora aplicada à demonstração','Três movimentos: ensinar algo relevante, adaptar a mensagem ao público e conduzir o próximo passo. A demonstração comprova uma nova forma de trabalhar, não percorre o catálogo.')}
+${sec('Os três movimentos','',
+`<div class="grid g3">
+${[['Ensinar','Leve uma hipótese simples sobre a operação do cliente. O teste da boa hipótese: você quer ouvir “nunca tinha pensado por esse lado”, não “exato, é isso mesmo”. Se o cliente concorda de cara, você não ensinou nada e ele já tem uma solução na cabeça.'],
+  ['Adaptar','Fale a língua de quem está na sala. Operações valoriza produtividade. Financeiro olha risco e previsibilidade. ESG olha rastreabilidade. Gestão de portfólio olha governança e comparação. A mesma tela significa coisas diferentes para cada um.'],
+  ['Assumir o controle','Conduza para um próximo passo concreto. Se o cliente pedir proposta cedo demais, valide antes o escopo, os dados disponíveis e quem precisa participar.']]
+ .map(([t,d],i)=>`<div class="card"><div class="eyebrow" style="margin-bottom:6px">Movimento ${i+1}</div><h3 style="font-size:15px;font-weight:700;margin-bottom:7px">${t}</h3><p style="font-size:13.5px;color:var(--ink-2);line-height:1.55">${d}</p></div>`).join('')}
+</div>`)}
+${sec('Demonstração em três fluxos','Três fluxos, não três sistemas. O cliente precisa enxergar um caminho inteiro, não um passeio por telas.',
+`<div class="card">${steps([
+ ['Capturar','Como a plataforma recebe faturas, contratos, portais, BMS, telemetria, planilhas e documentos. É o fluxo que responde à objeção “nossos dados não estão organizados”.'],
+ ['Governar','Como a informação é organizada, comparada, auditada e acompanhada com alertas, responsáveis e visão de portfólio. Aqui mora a diferença entre painel e gestão.'],
+ ['Decidir','Como o dado vira relatório, previsão, comparação, acompanhamento de performance e plano de ação. É o fluxo que o decisor sênior precisa ver, mesmo que entre só nos últimos dez minutos.']])}</div>
+<div style="margin-top:14px">${note('<b>Critério para escolher as telas.</b> Cada tela da primeira demonstração precisa estar ligada a uma dor ou resultado que apareceu nos vinte minutos de discovery. Não é necessário mostrar todos os sistemas numa reunião, e tentar isso é a forma mais rápida de perder o decisor.')}</div>`)}
+${sec('Como a reunião se divide','Uma hora, três blocos. O discovery acontece na própria reunião: você não precisa de material do cliente para demonstrar.',
+`<div class="card">${steps([
+ ['20 minutos · Conversa de discovery','Conversa, não questionário. Descubra onde está o custo operacional, quem sente a dor, quem decide e qual é o relógio do cliente. É aqui que você escolhe o que vai mostrar nos trinta minutos seguintes, então não entre com o roteiro de telas já fechado.'],
+ ['30 minutos · Apresentação da plataforma','Os três fluxos acima, com as telas escolhidas pelo que apareceu nos vinte minutos anteriores. Mostre menos e mais fundo: uma tela ligada a uma dor que ele acabou de contar vale mais que cinco telas de catálogo.'],
+ ['10 minutos · Discussão, dúvidas e próximos passos','Devolva a conversa ao cliente e ouça a objeção enquanto ela ainda é barata. Fecha com próximo passo datado e com nome, nunca com "qualquer dúvida estou à disposição".']])}</div>
+<div style="margin-top:14px">${note('<b>Se o cliente quiser proposta ao fim da reunião</b>, é nos dez minutos finais que você combina o escopo e o material que precisa receber para que ela saia aderente, em vez de prometer um documento sem saber o que vai dentro.')}</div>`)}
+`);
+
+/* ===================== 06 ===================== */
+let COACH=null, coachTried=false;
+async function ensureCoach(){
+  if(coachTried) return COACH; coachTried=true;
+  try{ COACH = await (window.claude && window.claude.use ? window.claude.use('sample') : null); }catch(e){ COACH=null; }
+  return COACH;
+}
+function toggleObj(id){ document.getElementById('obj-'+id).classList.toggle('open'); }
+M('objecoes','06','Objeções','objecao resposta caro excel sistema ti lgpd rescisao caso adocao',()=>`
+${head('06','Objeções','Treinador de objeções','Doze objeções reais, cada uma com o que está por trás dela, os três movimentos da resposta e o erro que a maioria comete. Responda o exercício antes de ler a resposta: uma objeção treinada na frente do cliente já custou uma conta; aqui custa trinta segundos.')}
+<div class="sec"><div class="objlist">${OBJ.map(o=>`
+<div class="objcard" id="obj-${o.id}">
+  <button type="button" onclick="toggleObj('${o.id}')">
+    <span style="flex:1"><q>${o.obj}</q></span>
+    <span class="row" style="gap:5px">${o.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</span><span class="caret">›</span>
+  </button>
+  <div class="objbody">
+    <div class="beneath"><b>O que está por trás</b>${o.beneath}</div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:9px">Exercício · escolha a melhor resposta</div>
+      <p style="font-size:14px;margin-bottom:11px;font-weight:500">${o.quiz.pergunta}</p>
+      <div class="quizopts">${(OBJSHUF[o.id]=embaralhar(o.quiz.opts)).map((op,j)=>`<button type="button" class="qopt" data-obj="${o.id}" data-j="${j}"><span class="mark">${'ABC'[j]}</span><span>${op.t}</span></button>`).join('')}</div>
+      <div id="fb-${o.id}"></div>
+    </div>
+    <div>
+      <div class="eyebrow" style="margin-bottom:9px">A resposta em três movimentos</div>
+      <div class="moves">${o.moves.map((m,j)=>`<div class="move"><span class="n">${String(j+1).padStart(2,'0')}</span><div><b>${m.b}</b><div class="said">“${m.t}”</div></div></div>`).join('')}</div>
+    </div>
+    ${note(`<b>Erro comum.</b> ${o.erro}`,'alert')}
+    <div class="coach">
+      <div class="eyebrow" style="margin:0">Treino livre</div>
+      <p style="font-size:13px;color:var(--ink-2)">Escreva com suas palavras a resposta que você daria ao cliente.</p>
+      <textarea id="ta-${o.id}" placeholder="Sua resposta..."></textarea>
+      <div class="row"><button class="btn" type="button" onclick="coachEval('${o.id}')" id="cb-${o.id}">Pedir avaliação</button><span style="font-size:11.5px;color:var(--ink-3)" id="cn-${o.id}"></span></div>
+      <div class="coachout" id="co-${o.id}" hidden></div>
+    </div>
+  </div>
+</div>`).join('')}</div></div>
+`, ()=>{
+  $$('.qopt').forEach(b=>b.addEventListener('click',()=>{
+    const o=OBJ.find(x=>x.id===b.dataset.obj), lista=OBJSHUF[o.id], j=+b.dataset.j, opt=lista[j], wrap=b.parentElement;
+    if(wrap.dataset.answered) return; wrap.dataset.answered='1';
+    $$('.qopt',wrap).forEach((x,k)=>{ if(lista[k].ok) marcarCerta(x); });
+    if(!opt.ok) b.classList.add('wrong');
+    $('#fb-'+o.id).innerHTML=`<div class="fb ${opt.ok?'ok':'no'}" style="margin-top:10px"><b>${opt.ok?'Certo.':'Não é a melhor.'}</b> ${opt.fb}</div>`;
+  }));
+  ensureCoach().then(c=>{ if(!c) $$('.coach').forEach(el=>el.remove()); });
+});
+async function coachEval(id){
+  const c=await ensureCoach(); if(!c) return;
+  const o=OBJ.find(x=>x.id===id), txt=$('#ta-'+id).value.trim();
+  if(txt.length<15){ $('#cn-'+id).textContent='Escreva um pouco mais para eu avaliar.'; return; }
+  const btn=$('#cb-'+id); btn.disabled=true; btn.textContent='Avaliando…';
+  const out=$('#co-'+id); out.hidden=false; out.textContent='Pensando…';
+  const prompt=`Você é um gerente comercial sênior treinando um vendedor da LUXSolutions, plataforma de gestão de energia, água, utilities e Real Estate para operações multiponto.
+
+OBJEÇÃO DO CLIENTE: "${o.obj}"
+O QUE ESTÁ POR TRÁS: ${o.beneath}
+RESPOSTA DE REFERÊNCIA (três movimentos):
+${o.moves.map((m,i)=>`${i+1}. ${m.b}: "${m.t}"`).join('\n')}
+ERRO COMUM A EVITAR: ${o.erro}
+
+RESPOSTA ESCRITA PELO VENDEDOR:
+"""${txt}"""
+
+Avalie em no máximo 130 palavras, em português do Brasil, direto e sem rodeio, nesta estrutura exata:
+O que funcionou: (uma ou duas frases concretas sobre o texto dele)
+O que enfraquece: (o ponto mais caro do texto, com o motivo)
+Reescreva assim: (uma versão melhorada, em uma ou duas frases, na voz dele)
+
+Regras: não invente número, preço, prazo, cliente ou funcionalidade. Não use travessão. Não elogie por educação: se o texto só devolve a objeção sem pedir nada, diga isso. Verifique se existe um pedido com ação e data; se não existir, aponte.`;
+  try{
+    const r=await c(prompt,{modelTier:'default', onText:({text})=>{ out.textContent=text; }});
+    out.textContent=r.text;
+  }catch(e){
+    out.textContent = e && e.code==='rate_limited' ? 'Limite de uso atingido. Tente daqui a pouco.' : 'Não consegui avaliar agora. Tente novamente em instantes.';
+  }
+  btn.disabled=false; btn.textContent='Pedir avaliação';
+}
+
+/* ===================== 07 ===================== */
+M('funil','07','Funil e checklists','funil etapas criterio avanco checklist reuniao alerta crm',()=>`
+${head('07','Operação','Funil e checklists','Critérios claros evitam que uma conversa positiva seja confundida com uma oportunidade madura. Cada etapa termina com evidência e um próximo passo verificável, não com uma boa impressão.')}
+${sec('Critérios de avanço','',
+`<div class="card"><div class="funnel">${FUNIL.map(f=>`<div class="fstep"><span class="num">0${f.n}</span><div><h4>${f.t}</h4><p>${f.d}</p><div class="exit"><b>Fecha quando:</b><span>${f.exit}</span></div></div></div>`).join('')}</div></div>
+<div style="margin-top:14px">${note('<b>Critério operacional.</b> Sem próximo passo datado, responsável nomeado e entrega combinada, a oportunidade não avançou, mesmo que a reunião tenha sido ótima. Reunião positiva é sensação; data com nome é evidência.','alert')}</div>`)}
+${sec('Antes da reunião','Marque conforme prepara. O estado fica salvo neste navegador.',
+`<div class="checks">${CHK_ANTES.map((c,i)=>`<label><input type="checkbox" data-ck="a${i}"><span>${c}</span></label>`).join('')}</div>`)}
+${sec('Sinais de alerta','Se dois ou mais aparecerem na mesma conta, reveja o tier antes de investir mais tempo.',
+`<div class="card" style="border-top:3px solid var(--ink-3)">${tick(ALERTAS,true)}</div>`)}
+${sec('Depois da reunião','Registre no mesmo dia. O que não é registrado hoje vira memória amanhã e ficção na semana que vem.',
+`<div class="checks">${CHK_DEPOIS.map((c,i)=>`<label><input type="checkbox" data-ck="d${i}"><span>${c}</span></label>`).join('')}</div>
+<div class="row" style="margin-top:14px"><button class="btn sec2" type="button" id="chk-reset">Limpar checklists</button></div>`)}
+`, ()=>{
+  const saved=store.get('checks',{});
+  $$('[data-ck]').forEach(c=>{ c.checked=!!saved[c.dataset.ck];
+    c.addEventListener('change',()=>{ const s=store.get('checks',{}); s[c.dataset.ck]=c.checked; store.set('checks',s); }); });
+  $('#chk-reset').addEventListener('click',()=>{ store.set('checks',{}); $$('[data-ck]').forEach(c=>c.checked=false); });
+});
+
+/* ===================== 08 ===================== */
+M('certificacao','08','Certificação','quiz prova certificacao teste',()=>`
+${head('08','Avaliação','Certificação','Onze questões sobre o que decide uma venda: posicionamento, escopo, qualificação, cenários, demonstração, objeções e disciplina de funil. Cada resposta vem com correção comentada. A nota de corte da trilha é 80%.')}
+<div class="sec"><div class="card" id="quizbox"></div></div>
+`, ()=>{
+  let i=0, acertos=0, answered=false;
+  function draw(){
+    const box=$('#quizbox');
+    if(i>=CERT.length){
+      const pct=Math.round(acertos/CERT.length*100);
+      const msg = pct>=80 ? 'Aprovado. Você domina os pontos que decidem uma venda. Volte ao módulo 06 de tempos em tempos para manter as objeções afiadas.'
+        : pct>=60 ? 'Quase lá. Revise os módulos 03 e 06, que concentram a maior parte dos erros, e refaça.'
+        : 'Volte à trilha. Comece pelos módulos 01 e 03: entender a plataforma e qualificar bem é o que mais custa caro quando falha na frente do cliente.';
+      box.innerHTML=`<div class="score"><b style="color:${pct>=80?'var(--lime-ink)':'var(--ink-3)'}">${pct}%</b><p><b>${acertos} de ${CERT.length}</b> corretas.</p><p>${msg}</p><button class="btn" type="button" id="q-again">Refazer</button></div>`;
+      $('#q-again').addEventListener('click',()=>{ i=0;acertos=0;draw(); });
+      store.set('cert',{pct,ts:Date.now()});
+      return;
+    }
+    const q=CERT[i], alts=embaralhar(q.o);
+    box.innerHTML=`
+      <div class="qhead"><span class="qcount">Questão ${String(i+1).padStart(2,'0')} de ${CERT.length}</span><span class="qcount">${acertos} corretas</span></div>
+      <div class="meter" style="margin-bottom:18px"><i style="width:${i/CERT.length*100}%;background:var(--lime)"></i></div>
+      <p class="qq">${q.q}</p>
+      <div class="quizopts" id="q-opts">${alts.map((o,j)=>`<button type="button" class="qopt" data-j="${j}"><span class="mark">${'ABC'[j]}</span><span>${o.t}</span></button>`).join('')}</div>
+      <div id="q-fb"></div>`;
+    answered=false;
+    $$('#q-opts .qopt').forEach(b=>b.addEventListener('click',()=>{
+      if(answered) return; answered=true;
+      const j=+b.dataset.j, ok=alts[j].ok; if(ok) acertos++;
+      $$('#q-opts .qopt').forEach((x,k)=>{ if(alts[k].ok) marcarCerta(x); });
+      if(!ok) b.classList.add('wrong');
+      $('#q-fb').innerHTML=`<div class="fb ${ok?'ok':'no'}" style="margin-top:12px"><b>${ok?'Certo.':'Não.'}</b> ${q.fb}</div><div class="row" style="margin-top:13px"><button class="btn" type="button" id="q-next">${i===CERT.length-1?'Ver resultado':'Próxima'}</button></div>`;
+      $('#q-next').addEventListener('click',()=>{ i++; draw(); });
+    }));
+  }
+  draw();
+});
+
+/* ===================== 09 ===================== */
+M('glossario','09','Glossário','glossario termos siglas acl ccee pld uc noi',()=>`
+${head('09','Referência','Glossário','Os termos e siglas que aparecem nos módulos deste playbook e nas conversas com cliente. Consulte quando precisar, não decore.')}
+<div class="sec">
+  <input id="gl-search" type="search" placeholder="Filtrar termos…" style="width:100%;max-width:340px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--ink);font:inherit;margin-bottom:16px" aria-label="Filtrar glossário">
+  <div class="glist" id="gl-list">${GLOSS.map(g=>`<div class="gitem" data-k="${esc((g.t+' '+g.d).toLowerCase())}"><b>${g.t}</b><span>${g.d}</span></div>`).join('')}</div>
+</div>
+`, ()=>{
+  $('#gl-search').addEventListener('input',e=>{
+    const q=e.target.value.toLowerCase().trim();
+    $$('#gl-list .gitem').forEach(it=>{ it.hidden = q && !it.dataset.k.includes(q); });
+  });
+});
+
+/* ===================== router ===================== */
+
+/* =====================================================================
+   Hifenização em português. Duas camadas: o idioma no documento, para o
+   hyphens:auto do navegador funcionar, e hifens virtuais inseridos no
+   texto, que garantem a quebra mesmo onde o dicionário não existe.
+   ===================================================================== */
+const SHY='­';
+const VOG='aeiouáéíóúâêôàãõäëïöüyAEIOUÁÉÍÓÚÂÊÔÀÃÕÄËÏÖÜY';
+const isV=c=>VOG.indexOf(c)>=0;
+const isC=c=>/[a-zà-ÿ]/i.test(c) && !isV(c);
+const DIG=['ch','lh','nh'];
+const CLU=['bl','br','cl','cr','dr','fl','fr','gl','gr','pl','pr','tr','tl','vr','vl'];
+function shyWord(w){
+  if(w.length<5 || w.indexOf(SHY)>=0) return w;
+  const L=w.toLowerCase(), cortes=[];
+  for(let i=1;i<L.length-1;i++){
+    if(!isV(L[i-1])) continue;                 // só quebra depois de vogal
+    if(!isC(L[i])) continue;                   // nunca entre vogais
+    let pos;
+    if(isV(L[i+1])) pos=i;                     // V-CV
+    else if(isC(L[i+1])){
+      const par=L[i]+L[i+1];
+      if(DIG.includes(par)||CLU.includes(par)) pos=i;           // V-CCV: dígrafo ou grupo indivisível
+      else if(isC(L[i+2]||'')){                                 // três consoantes
+        const par2=L[i+1]+L[i+2];
+        pos = (DIG.includes(par2)||CLU.includes(par2)) ? i+1 : i+2;
+      } else pos=i+1;                                           // VC-CV
+    } else continue;
+    if(pos>=2 && pos<=L.length-2) cortes.push(pos);
+  }
+  if(!cortes.length) return w;
+  let out='',prev=0;
+  for(const p of cortes){ if(p<=prev) continue; out+=w.slice(prev,p)+SHY; prev=p; }
+  return out+w.slice(prev);
+}
+const SHY_SEL='.lede,.prose p,.note,.pend,.beneath,.card p,.dosshead p,.fstep p,.kv .v,ul.tick li > span,.gitem span,.move .said,.coachout,.genout,.tierbox p,.score p,td';
+const shyDone=new WeakSet();
+function hifenizar(root){
+  if(!root) return;
+  root.querySelectorAll(SHY_SEL).forEach(el=>{
+    const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);
+    let n;
+    while((n=w.nextNode())){
+      if(shyDone.has(n)) continue;
+      shyDone.add(n);
+      const t=n.nodeValue;
+      if(!t || !/[A-Za-zÀ-ÿ]{5,}/.test(t)) continue;
+      const novo=t.replace(/[A-Za-zÀ-ÿ]{5,}/g, shyWord);
+      if(novo!==t) n.nodeValue=novo;
+    }
+  });
+}
+try{ document.documentElement.lang='pt-BR'; }catch(e){}
+document.addEventListener('copy',e=>{
+  const sel=window.getSelection?String(window.getSelection()):'';
+  if(sel && sel.indexOf(SHY)>=0){
+    e.clipboardData.setData('text/plain', sel.split(SHY).join(''));
+    e.preventDefault();
+  }
+});
+
+function buildNav(){
+  $('#nav').innerHTML = MODULES.map(m=>`<button type="button" class="navbtn ${done[m.id]?'done':''}" data-id="${m.id}" data-k="${esc((m.nome+' '+m.keys).toLowerCase())}"><span class="n">${m.num}</span><span>${m.nome}</span></button>`).join('');
+  $$('#nav .navbtn').forEach(b=>b.addEventListener('click',()=>go(b.dataset.id)));
+  updProgress();
+}
+function updProgress(){
+  const n=MODULES.filter(m=>done[m.id]).length;
+  $('#prog-bar').style.width=(n/MODULES.length*100)+'%';
+  $('#prog-txt').textContent=n+' / '+MODULES.length;
+}
+function go(id){
+  const m=MODULES.find(x=>x.id===id)||MODULES[0], k=MODULES.indexOf(m);
+  $('#view').innerHTML = m.render() + `
+  <hr class="rule">
+  <div class="row" style="justify-content:space-between;margin-top:24px;gap:12px">
+    <button class="btn ${done[m.id]?'sec2':''}" type="button" id="mark">${done[m.id]?'Concluído ✓':'Marcar como concluído'}</button>
+    <div class="row" style="gap:8px">
+      ${k>0?`<button class="btn sec2" type="button" onclick="go('${MODULES[k-1].id}')">← ${MODULES[k-1].num}</button>`:''}
+      ${k<MODULES.length-1?`<button class="btn" type="button" onclick="go('${MODULES[k+1].id}')">Próximo · ${MODULES[k+1].num} ${MODULES[k+1].nome} →</button>`:''}
+    </div>
+  </div>`;
+  $$('#nav .navbtn').forEach(b=>b.setAttribute('aria-current', String(b.dataset.id===m.id)));
+  $('#mark').addEventListener('click',()=>{
+    done[m.id]=!done[m.id]; store.set('done',done);
+    const btn=$('#mark'); btn.textContent=done[m.id]?'Concluído ✓':'Marcar como concluído'; btn.classList.toggle('sec2',!!done[m.id]);
+    const nb=$(`#nav .navbtn[data-id="${m.id}"]`); if(nb) nb.classList.toggle('done',!!done[m.id]);
+    updProgress();
+  });
+  if(m.after) try{ m.after(); }catch(e){ console.error(e); }
+  hifenizar($('#view'));
+  try{ location.hash='#'+m.id; }catch(e){}
+  window.scrollTo({top:0,behavior:'instant'});
+}
+$('#nav-search').addEventListener('input',e=>{
+  const q=e.target.value.toLowerCase().trim();
+  $$('#nav .navbtn').forEach(b=>{ b.hidden = q && !b.dataset.k.includes(q); });
+});
+function applyTheme(t){
+  if(t==='auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme',t);
+  store.set('theme',t);
+  $('#theme-btn').textContent = t==='auto'?'Tema: sistema':t==='dark'?'Tema: escuro':'Tema: claro';
+}
+$('#theme-btn').addEventListener('click',()=>{
+  const order=['auto','light','dark'], cur=store.get('theme','auto');
+  applyTheme(order[(order.indexOf(cur)+1)%3]);
+});
+applyTheme(store.get('theme','auto'));
+buildNav();
+const _view=document.getElementById('view');
+if(window.MutationObserver && _view) new MutationObserver(()=>hifenizar(_view)).observe(_view,{childList:true,subtree:true});
+go((location.hash||'').replace('#','') || 'plataforma');
+
+</script>
+
+</body>
+</html>
